@@ -56,7 +56,7 @@ in figure 1 of the manuscript.
 ###############################
 
 To make using the ifr package as easy as possible, we recommend that you
-add the top-level directory of the IFR_Dist package to your PYTHONPATH,
+add the top-level directory of the codebase to your PYTHONPATH,
 or install to your site_packages directory. Directions on how to do so
 can be found on the web.
 
