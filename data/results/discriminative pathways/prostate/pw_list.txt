@@ -1,0 +1,296 @@
+B-cell differentiation
+DNA metabolism
+RNA metabolism
+RNA-mediated posttranscriptional gene silencing
+T-cell differentiation
+T-cell selection
+acute-phase response
+alcohol metabolism
+aldehyde metabolism
+amine metabolism
+amine transport
+amino acid and derivative metabolism
+anterior compartment specification
+anterior/posterior axis specification
+anti-inflammatory response
+antigen presentation
+antigen processing
+arginine metabolism
+aromatic compound metabolism
+asymmetric protein localization
+auditory hair cell differentiation
+auditory hair cell fate commitment
+biopolymer biosynthesis
+biopolymer catabolism
+blood vessel morphogenesis
+body fluid osmoregulation
+bone resorption
+branching morphogenesis
+carbohydrate metabolism
+carbohydrate transport
+carbon utilization by fixation of carbon dioxide
+cell cycle
+cell fate determination
+cell fate specification
+cell ion homeostasis
+cell killing
+cell migration
+cell projection organization and biogenesis
+cell surface receptor linked signal transduction
+cell-cell adhesion
+cell-matrix adhesion
+cellular biosynthesis
+cellular catabolism
+cellular defense response (sensu Vertebrata)
+cellular lipid metabolism
+cellular macromolecule metabolism
+cellular response to starvation
+ciliary or flagellar motility
+circadian sleep/wake cycle
+clathrin cage assembly
+cofactor metabolism
+cofactor transport
+collagen fibril organization
+cytokine metabolism
+cytokine production
+cytokine secretion
+cytokinesis
+cytolysis
+cytoplasm organization and biogenesis
+defense response
+detection of biotic stimulus
+detection of external stimulus
+determination of bilateral symmetry
+development of primary female sexual characteristics
+development of primary male sexual characteristics
+diuresis
+drug metabolism
+ear morphogenesis
+embryonic appendage morphogenesis
+embryonic axis specification
+embryonic development (sensu Vertebrata)
+embryonic eye morphogenesis
+endocrine system development
+entrainment of circadian clock
+erythrocyte differentiation
+establishment and/or maintenance of cell polarity
+establishment of RNA localization
+establishment of protein localization
+extracellular transport
+eye morphogenesis
+eye pigment metabolism
+fat body development
+fertilization
+fluid transport
+follicle-stimulating hormone secretion
+fusion of sperm to egg plasma membrane
+gametogenesis
+gas transport
+gastrulation
+generation of precursor metabolites and energy
+gonad development
+heart development
+heme metabolism
+hemocyte development
+hemopoiesis
+hemostasis
+heterocycle metabolism
+histogenesis
+hormone metabolism
+humoral immune response
+hydrogen transport
+immune cell activation
+immunoglobulin secretion
+inflammatory response
+innate immune response
+intracellular signaling cascade
+intracellular transport
+ion transport
+lactation
+limb morphogenesis
+lipid catabolism
+lipid metabolism
+lipid transport
+long-term memory
+loss of chromatin silencing
+lung development
+lymph gland development
+lymphocyte proliferation
+macromolecule biosynthesis
+macromolecule catabolism
+maintenance of gastrointestinal epithelium
+maintenance of protein localization
+male genitalia morphogenesis
+mammary gland development
+megakaryocyte differentiation
+melanin metabolism
+melanocyte differentiation
+membrane organization and biogenesis
+mesoderm cell fate commitment
+mesoderm formation
+metabolic compound salvage
+midgut development
+monocyte differentiation
+muscle development
+musculoskeletal movement
+natriuresis
+negative regulation of adenylate cyclase activity
+negative regulation of cell adhesion
+negative regulation of cell differentiation
+negative regulation of cell growth
+negative regulation of cellular physiological process
+negative regulation of coagulation
+negative regulation of growth
+negative regulation of helicase activity
+negative regulation of metabolism
+negative regulation of neurogenesis
+negative regulation of organismal physiological process
+negative regulation of protein kinase activity
+negative regulation of secretion
+negative regulation of signal transduction
+negative regulation of viral genome replication
+negative regulation of virion penetration
+nerve maturation
+neuroblast proliferation
+neurogenesis
+neurotransmitter metabolism
+neurotransmitter transport
+nitric oxide biosynthesis
+nitric oxide metabolism
+nitrogen compound biosynthesis
+nitrogen compound catabolism
+nitrogen fixation
+nuclear organization and biogenesis
+nucleobase, nucleoside, nucleotide and nucleic acid metabolism
+nucleobase, nucleoside, nucleotide and nucleic acid transport
+nutrient uptake
+odontogenesis
+one-carbon compound metabolism
+organelle organization and biogenesis
+organic acid metabolism
+organic acid transport
+ornithine metabolism
+ossification
+ovarian follicle development
+oxygen and reactive oxygen species metabolism
+parturition
+passive viral induction of host immune response
+patterning of blood vessels
+peptide hormone secretion
+peptide metabolism
+phosphorus metabolism
+photoreceptor cell development
+pigment biosynthesis
+pigment catabolism
+platelet activation
+polyol transport
+polysaccharide metabolism
+positive regulation of 1-phosphatidylinositol 4-kinase activity
+positive regulation of adenylate cyclase activity
+positive regulation of caspase activity
+positive regulation of cell adhesion
+positive regulation of cell differentiation
+positive regulation of cell growth
+positive regulation of cellular physiological process
+positive regulation of growth
+positive regulation of metabolism
+positive regulation of neurogenesis
+positive regulation of organismal physiological process
+positive regulation of protein kinase activity
+positive regulation of secretion
+positive regulation of signal transduction
+positive regulation of viral genome replication
+posterior compartment specification
+pregnancy
+programmed cell death
+protein metabolism
+protein transport
+regional subdivision
+regulation of G-protein coupled receptor protein signaling pathway
+regulation of I-kappaB kinase/NF-kappaB cascade
+regulation of JAK-STAT cascade
+regulation of JNK cascade
+regulation of Wnt receptor signaling pathway
+regulation of axonogenesis
+regulation of biosynthesis
+regulation of blood coagulation
+regulation of blood pressure
+regulation of blood vessel size
+regulation of body size
+regulation of bone remodeling
+regulation of calcium-independent cell-cell adhesion
+regulation of carbohydrate metabolism
+regulation of catabolism
+regulation of cell activation
+regulation of cell motility
+regulation of cell organization and biogenesis
+regulation of cell proliferation
+regulation of cell shape
+regulation of cell size
+regulation of cell volume
+regulation of circadian rhythm
+regulation of circadian sleep/wake cycle
+regulation of cyclin dependent protein kinase activity
+regulation of dendrite morphogenesis
+regulation of endothelial cell differentiation
+regulation of epidermal growth factor receptor activity
+regulation of epithelial cell differentiation
+regulation of heart contraction rate
+regulation of hemocyte differentiation
+regulation of hormone secretion
+regulation of immune response
+regulation of insulin receptor signaling pathway
+regulation of lipid metabolism
+regulation of lymphocyte differentiation
+regulation of membrane potential
+regulation of myeloid blood cell differentiation
+regulation of myoblast differentiation
+regulation of neurotransmitter secretion
+regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolism
+regulation of phosphorus metabolism
+regulation of programmed cell death
+regulation of protein metabolism
+regulation of protein secretion
+regulation of retroviral genome replication
+regulation of small GTPase mediated signal transduction
+regulation of smoothened signaling pathway
+regulation of synaptic plasticity
+regulation of transforming growth factor beta receptor signaling pathway
+regulation of transport
+regulation of vascular endothelial growth factor receptor signaling pathway
+regulation of vascular permeability
+regulation of vasoconstriction
+regulation of vasodilation
+response to DNA damage stimulus
+response to abiotic stimulus
+response to cold
+response to external biotic stimulus
+response to heat
+response to hormone stimulus
+response to hypoxia
+response to nutrients
+response to osmotic stress
+response to oxidative stress
+response to pest, pathogen or parasite
+response to starvation
+response to unfolded protein
+response to wounding
+retroviral genome replication
+secretory pathway
+sensory perception
+sequestering of metal ion
+skeletal development
+sperm motility
+sulfur metabolism
+synaptic vesicle exocytosis
+taxis
+terpene metabolism
+terpenoid metabolism
+transmission of nerve impulse
+urea cycle
+urogenital system development
+vesicle-mediated transport
+viral entry
+viral transcription
+vitamin metabolism
+xenobiotic metabolism

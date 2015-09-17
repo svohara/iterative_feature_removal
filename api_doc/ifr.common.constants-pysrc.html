@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ifr.common.constants</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ifr-module.html">Package&nbsp;ifr</a> ::
+        <a href="ifr.common-module.html">Package&nbsp;common</a> ::
+        Module&nbsp;constants
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ifr.common.constants-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="ifr.common.constants-module.html">Module ifr.common.constants</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-docstring">'''</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-docstring">Created on Sep 25, 2012</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-docstring">@author: Stephen O'Hara</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-docstring">Handy constants</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-docstring">'''</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">os</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">data</tt> <tt class="py-keyword">as</tt> <tt class="py-name">ifrdata</tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"><tt id="link-0" class="py-name" targets="Variable ifr.DATA_DIR=ifr-module.html#DATA_DIR,Variable ifr.common.constants.DATA_DIR=ifr.common.constants-module.html#DATA_DIR"><a title="ifr.DATA_DIR
+ifr.common.constants.DATA_DIR" class="py-name" href="#" onclick="return doclink('link-0', 'DATA_DIR', 'link-0');">DATA_DIR</a></tt> <tt class="py-op">=</tt> <tt class="py-name">ifrdata</tt><tt class="py-op">.</tt><tt class="py-name">__path__</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"><tt id="link-1" class="py-name" targets="Variable ifr.RESULTS_DIR=ifr-module.html#RESULTS_DIR,Variable ifr.common.constants.RESULTS_DIR=ifr.common.constants-module.html#RESULTS_DIR"><a title="ifr.RESULTS_DIR
+ifr.common.constants.RESULTS_DIR" class="py-name" href="#" onclick="return doclink('link-1', 'RESULTS_DIR', 'link-1');">RESULTS_DIR</a></tt> <tt class="py-op">=</tt> <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt id="link-2" class="py-name"><a title="ifr.DATA_DIR
+ifr.common.constants.DATA_DIR" class="py-name" href="#" onclick="return doclink('link-2', 'DATA_DIR', 'link-0');">DATA_DIR</a></tt><tt class="py-op">,</tt> <tt class="py-string">"results"</tt><tt class="py-op">)</tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-comment">#directory where the python-compatible data files are located</tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"><tt class="py-comment"># created from the Duke data</tt> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line"><tt id="link-3" class="py-name" targets="Variable ifr.DUKE_PYDAT_DIR=ifr-module.html#DUKE_PYDAT_DIR,Variable ifr.common.constants.DUKE_PYDAT_DIR=ifr.common.constants-module.html#DUKE_PYDAT_DIR"><a title="ifr.DUKE_PYDAT_DIR
+ifr.common.constants.DUKE_PYDAT_DIR" class="py-name" href="#" onclick="return doclink('link-3', 'DUKE_PYDAT_DIR', 'link-3');">DUKE_PYDAT_DIR</a></tt> <tt class="py-op">=</tt> <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt id="link-4" class="py-name"><a title="ifr.DATA_DIR
+ifr.common.constants.DATA_DIR" class="py-name" href="#" onclick="return doclink('link-4', 'DATA_DIR', 'link-0');">DATA_DIR</a></tt><tt class="py-op">,</tt> <tt class="py-string">"Duke_Data_For_Python"</tt><tt class="py-op">)</tt> </tt>
+<a name="L16"></a><tt class="py-lineno"> 16</tt>  <tt class="py-line"> </tt>
+<a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line"><tt class="py-comment">#DUKE Panviral datasets</tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"><tt id="link-5" class="py-name" targets="Variable ifr.PV_DATASET_H1N1=ifr-module.html#PV_DATASET_H1N1,Variable ifr.common.constants.PV_DATASET_H1N1=ifr.common.constants-module.html#PV_DATASET_H1N1"><a title="ifr.PV_DATASET_H1N1
+ifr.common.constants.PV_DATASET_H1N1" class="py-name" href="#" onclick="return doclink('link-5', 'PV_DATASET_H1N1', 'link-5');">PV_DATASET_H1N1</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'H1N1'</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line"><tt id="link-6" class="py-name" targets="Variable ifr.PV_DATASET_H3N2=ifr-module.html#PV_DATASET_H3N2,Variable ifr.common.constants.PV_DATASET_H3N2=ifr.common.constants-module.html#PV_DATASET_H3N2"><a title="ifr.PV_DATASET_H3N2
+ifr.common.constants.PV_DATASET_H3N2" class="py-name" href="#" onclick="return doclink('link-6', 'PV_DATASET_H3N2', 'link-6');">PV_DATASET_H3N2</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'Fluz'</tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line"><tt id="link-7" class="py-name" targets="Variable ifr.PV_DATASET_HRV=ifr-module.html#PV_DATASET_HRV,Variable ifr.common.constants.PV_DATASET_HRV=ifr.common.constants-module.html#PV_DATASET_HRV"><a title="ifr.PV_DATASET_HRV
+ifr.common.constants.PV_DATASET_HRV" class="py-name" href="#" onclick="return doclink('link-7', 'PV_DATASET_HRV', 'link-7');">PV_DATASET_HRV</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'Rhino'</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line"><tt id="link-8" class="py-name" targets="Variable ifr.PV_DATASET_RSV=ifr-module.html#PV_DATASET_RSV,Variable ifr.common.constants.PV_DATASET_RSV=ifr.common.constants-module.html#PV_DATASET_RSV"><a title="ifr.PV_DATASET_RSV
+ifr.common.constants.PV_DATASET_RSV" class="py-name" href="#" onclick="return doclink('link-8', 'PV_DATASET_RSV', 'link-8');">PV_DATASET_RSV</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'RSV'</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line"><tt id="link-9" class="py-name" targets="Variable ifr.PV_DATASETS=ifr-module.html#PV_DATASETS,Variable ifr.common.constants.PV_DATASETS=ifr.common.constants-module.html#PV_DATASETS"><a title="ifr.PV_DATASETS
+ifr.common.constants.PV_DATASETS" class="py-name" href="#" onclick="return doclink('link-9', 'PV_DATASETS', 'link-9');">PV_DATASETS</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt id="link-10" class="py-name"><a title="ifr.PV_DATASET_H3N2
+ifr.common.constants.PV_DATASET_H3N2" class="py-name" href="#" onclick="return doclink('link-10', 'PV_DATASET_H3N2', 'link-6');">PV_DATASET_H3N2</a></tt><tt class="py-op">,</tt> <tt id="link-11" class="py-name"><a title="ifr.PV_DATASET_H1N1
+ifr.common.constants.PV_DATASET_H1N1" class="py-name" href="#" onclick="return doclink('link-11', 'PV_DATASET_H1N1', 'link-5');">PV_DATASET_H1N1</a></tt><tt class="py-op">,</tt> <tt id="link-12" class="py-name"><a title="ifr.PV_DATASET_HRV
+ifr.common.constants.PV_DATASET_HRV" class="py-name" href="#" onclick="return doclink('link-12', 'PV_DATASET_HRV', 'link-7');">PV_DATASET_HRV</a></tt><tt class="py-op">,</tt> <tt id="link-13" class="py-name"><a title="ifr.PV_DATASET_RSV
+ifr.common.constants.PV_DATASET_RSV" class="py-name" href="#" onclick="return doclink('link-13', 'PV_DATASET_RSV', 'link-8');">PV_DATASET_RSV</a></tt><tt class="py-op">]</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line"> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line"><tt class="py-comment">#Data sets from Kent Ridge repository</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line"><tt id="link-14" class="py-name" targets="Variable ifr.KENT_RIDGE_DIR=ifr-module.html#KENT_RIDGE_DIR,Variable ifr.common.constants.KENT_RIDGE_DIR=ifr.common.constants-module.html#KENT_RIDGE_DIR"><a title="ifr.KENT_RIDGE_DIR
+ifr.common.constants.KENT_RIDGE_DIR" class="py-name" href="#" onclick="return doclink('link-14', 'KENT_RIDGE_DIR', 'link-14');">KENT_RIDGE_DIR</a></tt> <tt class="py-op">=</tt> <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt id="link-15" class="py-name"><a title="ifr.DATA_DIR
+ifr.common.constants.DATA_DIR" class="py-name" href="#" onclick="return doclink('link-15', 'DATA_DIR', 'link-0');">DATA_DIR</a></tt><tt class="py-op">,</tt> <tt class="py-string">"KentRidgeData"</tt><tt class="py-op">)</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line"><tt id="link-16" class="py-name" targets="Variable ifr.LUNG_CANCER_DIR=ifr-module.html#LUNG_CANCER_DIR,Variable ifr.common.constants.LUNG_CANCER_DIR=ifr.common.constants-module.html#LUNG_CANCER_DIR"><a title="ifr.LUNG_CANCER_DIR
+ifr.common.constants.LUNG_CANCER_DIR" class="py-name" href="#" onclick="return doclink('link-16', 'LUNG_CANCER_DIR', 'link-16');">LUNG_CANCER_DIR</a></tt> <tt class="py-op">=</tt> <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt> <tt id="link-17" class="py-name"><a title="ifr.KENT_RIDGE_DIR
+ifr.common.constants.KENT_RIDGE_DIR" class="py-name" href="#" onclick="return doclink('link-17', 'KENT_RIDGE_DIR', 'link-14');">KENT_RIDGE_DIR</a></tt><tt class="py-op">,</tt> <tt class="py-string">"lungcancer"</tt><tt class="py-op">)</tt> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line"><tt id="link-18" class="py-name" targets="Variable ifr.PROSTATE_DIR=ifr-module.html#PROSTATE_DIR,Variable ifr.common.constants.PROSTATE_DIR=ifr.common.constants-module.html#PROSTATE_DIR"><a title="ifr.PROSTATE_DIR
+ifr.common.constants.PROSTATE_DIR" class="py-name" href="#" onclick="return doclink('link-18', 'PROSTATE_DIR', 'link-18');">PROSTATE_DIR</a></tt> <tt class="py-op">=</tt> <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt> <tt id="link-19" class="py-name"><a title="ifr.KENT_RIDGE_DIR
+ifr.common.constants.KENT_RIDGE_DIR" class="py-name" href="#" onclick="return doclink('link-19', 'KENT_RIDGE_DIR', 'link-14');">KENT_RIDGE_DIR</a></tt><tt class="py-op">,</tt> <tt class="py-string">"prostate"</tt><tt class="py-op">)</tt> </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line"><tt id="link-20" class="py-name" targets="Variable ifr.BCELL_LYMPHOMA_DIR=ifr-module.html#BCELL_LYMPHOMA_DIR,Variable ifr.common.constants.BCELL_LYMPHOMA_DIR=ifr.common.constants-module.html#BCELL_LYMPHOMA_DIR"><a title="ifr.BCELL_LYMPHOMA_DIR
+ifr.common.constants.BCELL_LYMPHOMA_DIR" class="py-name" href="#" onclick="return doclink('link-20', 'BCELL_LYMPHOMA_DIR', 'link-20');">BCELL_LYMPHOMA_DIR</a></tt> <tt class="py-op">=</tt> <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt> <tt id="link-21" class="py-name"><a title="ifr.KENT_RIDGE_DIR
+ifr.common.constants.KENT_RIDGE_DIR" class="py-name" href="#" onclick="return doclink('link-21', 'KENT_RIDGE_DIR', 'link-14');">KENT_RIDGE_DIR</a></tt><tt class="py-op">,</tt> <tt class="py-string">"DLBCL"</tt><tt class="py-op">)</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line"><tt id="link-22" class="py-name" targets="Variable ifr.LUNG_CANCER_URL=ifr-module.html#LUNG_CANCER_URL,Variable ifr.common.constants.LUNG_CANCER_URL=ifr.common.constants-module.html#LUNG_CANCER_URL"><a title="ifr.LUNG_CANCER_URL
+ifr.common.constants.LUNG_CANCER_URL" class="py-name" href="#" onclick="return doclink('link-22', 'LUNG_CANCER_URL', 'link-22');">LUNG_CANCER_URL</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'http://levis.tongji.edu.cn/gzli/data/lungcancer.zip'</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line"><tt id="link-23" class="py-name" targets="Variable ifr.PROSTATE_URL=ifr-module.html#PROSTATE_URL,Variable ifr.common.constants.PROSTATE_URL=ifr.common.constants-module.html#PROSTATE_URL"><a title="ifr.PROSTATE_URL
+ifr.common.constants.PROSTATE_URL" class="py-name" href="#" onclick="return doclink('link-23', 'PROSTATE_URL', 'link-23');">PROSTATE_URL</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'http://levis.tongji.edu.cn/gzli/data/Prostate.zip'</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line"><tt id="link-24" class="py-name" targets="Variable ifr.BCELL_LYMPHOMA_URL=ifr-module.html#BCELL_LYMPHOMA_URL,Variable ifr.common.constants.BCELL_LYMPHOMA_URL=ifr.common.constants-module.html#BCELL_LYMPHOMA_URL"><a title="ifr.BCELL_LYMPHOMA_URL
+ifr.common.constants.BCELL_LYMPHOMA_URL" class="py-name" href="#" onclick="return doclink('link-24', 'BCELL_LYMPHOMA_URL', 'link-24');">BCELL_LYMPHOMA_URL</a></tt> <tt class="py-op">=</tt> <tt class="py-string">'http://levis.tongji.edu.cn/gzli/data/DLBCL.zip'</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line"> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line"> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line"><tt class="py-comment">#Files output by matlab SSVM-based IFR</tt> </tt>
+<a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line"><tt id="link-25" class="py-name" targets="Variable ifr.IFR_INFLUENZA_FILE_GENES=ifr-module.html#IFR_INFLUENZA_FILE_GENES,Variable ifr.common.constants.IFR_INFLUENZA_FILE_GENES=ifr.common.constants-module.html#IFR_INFLUENZA_FILE_GENES"><a title="ifr.IFR_INFLUENZA_FILE_GENES
+ifr.common.constants.IFR_INFLUENZA_FILE_GENES" class="py-name" href="#" onclick="return doclink('link-25', 'IFR_INFLUENZA_FILE_GENES', 'link-25');">IFR_INFLUENZA_FILE_GENES</a></tt> <tt class="py-op">=</tt> <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt id="link-26" class="py-name"><a title="ifr.RESULTS_DIR
+ifr.common.constants.RESULTS_DIR" class="py-name" href="#" onclick="return doclink('link-26', 'RESULTS_DIR', 'link-1');">RESULTS_DIR</a></tt><tt class="py-op">,</tt> <tt class="py-string">"IFR_SSVM"</tt><tt class="py-op">,</tt> <tt class="py-string">"H3N2_Genelist_SSVM_02112013.csv"</tt><tt class="py-op">)</tt> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line"><tt id="link-27" class="py-name" targets="Variable ifr.IFR_INFLUENZA_FILE_ACC=ifr-module.html#IFR_INFLUENZA_FILE_ACC,Variable ifr.common.constants.IFR_INFLUENZA_FILE_ACC=ifr.common.constants-module.html#IFR_INFLUENZA_FILE_ACC"><a title="ifr.IFR_INFLUENZA_FILE_ACC
+ifr.common.constants.IFR_INFLUENZA_FILE_ACC" class="py-name" href="#" onclick="return doclink('link-27', 'IFR_INFLUENZA_FILE_ACC', 'link-27');">IFR_INFLUENZA_FILE_ACC</a></tt> <tt class="py-op">=</tt> <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt id="link-28" class="py-name"><a title="ifr.RESULTS_DIR
+ifr.common.constants.RESULTS_DIR" class="py-name" href="#" onclick="return doclink('link-28', 'RESULTS_DIR', 'link-1');">RESULTS_DIR</a></tt><tt class="py-op">,</tt> <tt class="py-string">"IFR_SSVM"</tt><tt class="py-op">,</tt> <tt class="py-string">"H3N2_SSVM_Remove_Acc_02112013.txt"</tt><tt class="py-op">)</tt> </tt>
+<a name="L37"></a><tt class="py-lineno"> 37</tt>  <tt class="py-line"><tt id="link-29" class="py-name" targets="Variable ifr.IFR_LUNG_FILE_GENES=ifr-module.html#IFR_LUNG_FILE_GENES,Variable ifr.common.constants.IFR_LUNG_FILE_GENES=ifr.common.constants-module.html#IFR_LUNG_FILE_GENES"><a title="ifr.IFR_LUNG_FILE_GENES
+ifr.common.constants.IFR_LUNG_FILE_GENES" class="py-name" href="#" onclick="return doclink('link-29', 'IFR_LUNG_FILE_GENES', 'link-29');">IFR_LUNG_FILE_GENES</a></tt> <tt class="py-op">=</tt> <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt id="link-30" class="py-name"><a title="ifr.RESULTS_DIR
+ifr.common.constants.RESULTS_DIR" class="py-name" href="#" onclick="return doclink('link-30', 'RESULTS_DIR', 'link-1');">RESULTS_DIR</a></tt><tt class="py-op">,</tt> <tt class="py-string">"IFR_SSVM"</tt><tt class="py-op">,</tt> <tt class="py-string">"Lung_Genelist_SSVM_02112013.csv"</tt><tt class="py-op">)</tt> </tt>
+<a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line"><tt id="link-31" class="py-name" targets="Variable ifr.IFR_LUNG_FILE_ACC=ifr-module.html#IFR_LUNG_FILE_ACC,Variable ifr.common.constants.IFR_LUNG_FILE_ACC=ifr.common.constants-module.html#IFR_LUNG_FILE_ACC"><a title="ifr.IFR_LUNG_FILE_ACC
+ifr.common.constants.IFR_LUNG_FILE_ACC" class="py-name" href="#" onclick="return doclink('link-31', 'IFR_LUNG_FILE_ACC', 'link-31');">IFR_LUNG_FILE_ACC</a></tt> <tt class="py-op">=</tt> <tt class="py-name">os</tt><tt class="py-op">.</tt><tt class="py-name">path</tt><tt class="py-op">.</tt><tt class="py-name">join</tt><tt class="py-op">(</tt><tt id="link-32" class="py-name"><a title="ifr.RESULTS_DIR
+ifr.common.constants.RESULTS_DIR" class="py-name" href="#" onclick="return doclink('link-32', 'RESULTS_DIR', 'link-1');">RESULTS_DIR</a></tt><tt class="py-op">,</tt> <tt class="py-string">"IFR_SSVM"</tt><tt class="py-op">,</tt> <tt class="py-string">"Lung_SSVM_Remove_Acc_02112013.txt"</tt><tt class="py-op">)</tt> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line"> </tt>
+<a name="flu_genelists"></a><div id="flu_genelists-def"><a name="L40"></a><tt class="py-lineno"> 40</tt> <a class="py-toggle" href="#" id="flu_genelists-toggle" onclick="return toggle('flu_genelists');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="ifr.common.constants.flu_genelists-class.html">flu_genelists</a><tt class="py-op">:</tt> </tt>
+</div><div id="flu_genelists-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="flu_genelists-expanded"><a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line">    <tt class="py-docstring">'''</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line"><tt class="py-docstring">    Structure for organizing all the constant genelists that are used to generate various</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line"><tt class="py-docstring">    figures.</tt> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line"><tt class="py-docstring">    '''</tt> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">    </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line">    <tt class="py-comment">#The following list from Chen et al, 2011, page 8. Note that 'AFFX-HUMISGF3A/M97935_3_at' was reported as HU-MISGF3A</tt> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">    <tt id="link-33" class="py-name" targets="Variable ifr.common.constants.flu_genelists.BENET50_GENELIST=ifr.common.constants.flu_genelists-class.html#BENET50_GENELIST"><a title="ifr.common.constants.flu_genelists.BENET50_GENELIST" class="py-name" href="#" onclick="return doclink('link-33', 'BENET50_GENELIST', 'link-33');">BENET50_GENELIST</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'OAS1'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFI44'</tt><tt class="py-op">,</tt> <tt class="py-string">'DDX60'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFI44L'</tt><tt class="py-op">,</tt>  <tt class="py-string">'IFIT1'</tt><tt class="py-op">,</tt> <tt class="py-string">'GBP1'</tt><tt class="py-op">,</tt> <tt class="py-string">'LY6E'</tt><tt class="py-op">,</tt> <tt class="py-string">'RSAD2'</tt><tt class="py-op">,</tt> <tt class="py-string">'SCO2'</tt><tt class="py-op">,</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line">                             <tt class="py-string">'TRIM22'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFITM1'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFIT3'</tt><tt class="py-op">,</tt> <tt class="py-string">'ISG15'</tt><tt class="py-op">,</tt> <tt class="py-string">'MS4A4A'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFI6'</tt><tt class="py-op">,</tt> <tt class="py-string">'PSME2'</tt><tt class="py-op">,</tt> <tt class="py-string">'XAF1'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFIT5'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFITM3'</tt><tt class="py-op">,</tt> </tt>
+<a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line">                             <tt class="py-string">'HERC5'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFI27'</tt><tt class="py-op">,</tt> <tt class="py-string">'SERPING1'</tt><tt class="py-op">,</tt> <tt class="py-string">'PLSCR1'</tt><tt class="py-op">,</tt> <tt class="py-string">'OAS3'</tt><tt class="py-op">,</tt> <tt class="py-string">'STAT1'</tt><tt class="py-op">,</tt> <tt class="py-string">'ZCCHC2'</tt><tt class="py-op">,</tt> <tt class="py-string">'AFFX-HUMISGF3A/M97935_3_at'</tt><tt class="py-op">,</tt> <tt class="py-string">'OASL'</tt><tt class="py-op">,</tt> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">                             <tt class="py-string">'C1QB'</tt><tt class="py-op">,</tt> <tt class="py-string">'SIGLEC1'</tt><tt class="py-op">,</tt> <tt class="py-string">'AIM2'</tt><tt class="py-op">,</tt> <tt class="py-string">'OAS2'</tt><tt class="py-op">,</tt> <tt class="py-string">'MX1'</tt><tt class="py-op">,</tt> <tt class="py-string">'LOC26010'</tt><tt class="py-op">,</tt> <tt class="py-string">'SMPDL3A'</tt><tt class="py-op">,</tt> <tt class="py-string">'C13orf18'</tt><tt class="py-op">,</tt> <tt class="py-string">'LAP3'</tt><tt class="py-op">,</tt> <tt class="py-string">'TDRD7'</tt><tt class="py-op">,</tt> </tt>
+<a name="L51"></a><tt class="py-lineno"> 51</tt>  <tt class="py-line">                             <tt class="py-string">'PARP12'</tt><tt class="py-op">,</tt> <tt class="py-string">'PSME1'</tt><tt class="py-op">,</tt> <tt class="py-string">'VAMP5'</tt><tt class="py-op">,</tt> <tt class="py-string">'IRF7'</tt><tt class="py-op">,</tt> <tt class="py-string">'SAT1'</tt><tt class="py-op">,</tt> <tt class="py-string">'SMAD1'</tt><tt class="py-op">,</tt> <tt class="py-string">'BLVRA'</tt><tt class="py-op">,</tt> <tt class="py-string">'IDH2'</tt><tt class="py-op">,</tt> <tt class="py-string">'C1QA'</tt><tt class="py-op">,</tt> <tt class="py-string">'MT2A'</tt><tt class="py-op">,</tt> <tt class="py-string">'TAP1'</tt><tt class="py-op">]</tt> </tt>
+<a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">     </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line">     </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line">    <tt class="py-comment">#Interferon Stimulated Genes found in the first 40 iterations of SSVM IFR</tt> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line">    <tt class="py-comment"># The AFFX-... are described as relating to the STAT1 pathway and thus should? be part of this group.</tt> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line">    <tt id="link-34" class="py-name" targets="Variable ifr.common.constants.flu_genelists.SSVM_ISG=ifr.common.constants.flu_genelists-class.html#SSVM_ISG"><a title="ifr.common.constants.flu_genelists.SSVM_ISG" class="py-name" href="#" onclick="return doclink('link-34', 'SSVM_ISG', 'link-34');">SSVM_ISG</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'OAS1'</tt><tt class="py-op">,</tt><tt class="py-string">'OAS3'</tt><tt class="py-op">,</tt><tt class="py-string">'OASL'</tt><tt class="py-op">,</tt> <tt class="py-string">'OAS2'</tt><tt class="py-op">,</tt> <tt class="py-string">'RSAD2'</tt><tt class="py-op">,</tt> <tt class="py-string">'MX1'</tt><tt class="py-op">,</tt> <tt class="py-string">'STAT1'</tt><tt class="py-op">,</tt> <tt class="py-string">'STAT2'</tt><tt class="py-op">,</tt> <tt class="py-string">'STAT5B'</tt><tt class="py-op">,</tt> <tt class="py-string">'HERC5'</tt><tt class="py-op">,</tt> <tt class="py-string">'HERC6'</tt><tt class="py-op">,</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line">                <tt class="py-string">'IFI44'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFIT1'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFI44L'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFITM1'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFI27'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFIT3'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFI6'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFITM3'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFIT5'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFIH1'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFI35'</tt><tt class="py-op">,</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">                <tt class="py-string">'IFI30'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFIT2'</tt><tt class="py-op">,</tt> <tt class="py-string">'IFITM2'</tt><tt class="py-op">,</tt> <tt class="py-string">'ISG15'</tt><tt class="py-op">,</tt> <tt class="py-string">'IL15'</tt><tt class="py-op">,</tt> <tt class="py-string">'IL15RA'</tt><tt class="py-op">,</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">                <tt class="py-string">'DDX60'</tt><tt class="py-op">,</tt> <tt class="py-string">'GBP1'</tt><tt class="py-op">,</tt> <tt class="py-string">'TRIM22'</tt><tt class="py-op">,</tt> <tt class="py-string">'PSME1'</tt><tt class="py-op">,</tt> <tt class="py-string">'PSME2'</tt><tt class="py-op">,</tt> <tt class="py-string">'XAF1'</tt><tt class="py-op">,</tt> <tt class="py-string">'IRF7'</tt><tt class="py-op">,</tt> <tt class="py-string">'IRF9'</tt><tt class="py-op">,</tt> <tt class="py-string">'AIM2'</tt><tt class="py-op">,</tt> <tt class="py-string">'ISG20'</tt><tt class="py-op">]</tt> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">     </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">    <tt class="py-comment">#            'AFFX-HUMISGF3A/M97935_3_at','AFFX-HUMISGF3A/M97935_MA_at','AFFX-HUMISGF3A/M97935_MB_at']</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">     </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">    <tt class="py-comment">#Antigen Recognition genes within first 40 iterations</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">    <tt id="link-35" class="py-name" targets="Variable ifr.common.constants.flu_genelists.SSVM_HLA=ifr.common.constants.flu_genelists-class.html#SSVM_HLA"><a title="ifr.common.constants.flu_genelists.SSVM_HLA" class="py-name" href="#" onclick="return doclink('link-35', 'SSVM_HLA', 'link-35');">SSVM_HLA</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'HLA-DQA1'</tt><tt class="py-op">,</tt> <tt class="py-string">'HLA-DQB1'</tt><tt class="py-op">,</tt> <tt class="py-string">'HLA-DOB'</tt><tt class="py-op">,</tt> <tt class="py-string">'HLA-E'</tt><tt class="py-op">,</tt> <tt class="py-string">'HLA-B'</tt><tt class="py-op">,</tt> <tt class="py-string">'HLA-DPA1'</tt><tt class="py-op">,</tt><tt class="py-string">'CD1C'</tt><tt class="py-op">,</tt> </tt>
+<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line">                <tt class="py-string">'TAP1'</tt><tt class="py-op">,</tt> <tt class="py-string">'TAP2'</tt><tt class="py-op">,</tt><tt class="py-string">'MICA'</tt><tt class="py-op">]</tt> </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">     </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">    <tt class="py-comment">#TNF Super Family</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">    <tt id="link-36" class="py-name" targets="Variable ifr.common.constants.flu_genelists.SSVM_TNF=ifr.common.constants.flu_genelists-class.html#SSVM_TNF"><a title="ifr.common.constants.flu_genelists.SSVM_TNF" class="py-name" href="#" onclick="return doclink('link-36', 'SSVM_TNF', 'link-36');">SSVM_TNF</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'TNFRSF10B'</tt><tt class="py-op">,</tt> <tt class="py-string">'TNFSF10'</tt><tt class="py-op">,</tt> <tt class="py-string">'TNFRSF4'</tt><tt class="py-op">,</tt> <tt class="py-string">'TNFAIP1'</tt><tt class="py-op">,</tt><tt class="py-string">'TNFAIP6'</tt><tt class="py-op">,</tt> <tt class="py-string">'TNF'</tt><tt class="py-op">,</tt> <tt class="py-string">'TNFAIP3'</tt><tt class="py-op">,</tt> <tt class="py-string">'TNFRSF14'</tt><tt class="py-op">]</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">    <tt class="py-comment">#'TNFRSF9' at iteration 41</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line">      </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">    <tt class="py-comment">#IL-1 Beta Receptor Family</tt> </tt>
+<a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line">    <tt id="link-37" class="py-name" targets="Variable ifr.common.constants.flu_genelists.SSVM_IL1=ifr.common.constants.flu_genelists-class.html#SSVM_IL1"><a title="ifr.common.constants.flu_genelists.SSVM_IL1" class="py-name" href="#" onclick="return doclink('link-37', 'SSVM_IL1', 'link-37');">SSVM_IL1</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'IL1B'</tt><tt class="py-op">,</tt> <tt class="py-string">'IL1R1'</tt><tt class="py-op">,</tt><tt class="py-string">'IL1RAP'</tt><tt class="py-op">,</tt><tt class="py-string">'IL1F5'</tt><tt class="py-op">,</tt><tt class="py-string">'IL1RL2'</tt><tt class="py-op">,</tt><tt class="py-string">'IL33'</tt><tt class="py-op">]</tt> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line">     </tt>
+<a name="L74"></a><tt class="py-lineno"> 74</tt>  <tt class="py-line">     </tt>
+<a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">    <tt class="py-comment">#B Cell Maturation and Activation</tt> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">    <tt id="link-38" class="py-name" targets="Variable ifr.common.constants.flu_genelists.SSVM_BCell=ifr.common.constants.flu_genelists-class.html#SSVM_BCell"><a title="ifr.common.constants.flu_genelists.SSVM_BCell" class="py-name" href="#" onclick="return doclink('link-38', 'SSVM_BCell', 'link-38');">SSVM_BCell</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt>  <tt class="py-string">'IGHM'</tt><tt class="py-op">,</tt><tt class="py-string">'IGHD'</tt><tt class="py-op">,</tt> <tt class="py-string">'IGHV3-23'</tt><tt class="py-op">,</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">                   <tt class="py-string">'CD200'</tt><tt class="py-op">,</tt>  <tt class="py-string">'CD24'</tt><tt class="py-op">,</tt><tt class="py-string">'CD9'</tt><tt class="py-op">,</tt><tt class="py-string">'CD22'</tt><tt class="py-op">,</tt> <tt class="py-string">'CD38'</tt><tt class="py-op">,</tt> <tt class="py-string">'CD19'</tt><tt class="py-op">,</tt> <tt class="py-string">'CD79A'</tt><tt class="py-op">,</tt> <tt class="py-string">'CD86'</tt><tt class="py-op">,</tt> <tt class="py-string">'CD40'</tt><tt class="py-op">,</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">                   <tt class="py-string">'CD72'</tt> <tt class="py-op">]</tt>  </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line">     </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line">    <tt class="py-comment">#Cell cycle related genes</tt> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line">    <tt id="link-39" class="py-name" targets="Variable ifr.common.constants.flu_genelists.SSVM_CDC=ifr.common.constants.flu_genelists-class.html#SSVM_CDC"><a title="ifr.common.constants.flu_genelists.SSVM_CDC" class="py-name" href="#" onclick="return doclink('link-39', 'SSVM_CDC', 'link-39');">SSVM_CDC</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'CDK5'</tt><tt class="py-op">,</tt><tt class="py-string">'CDKAL1'</tt><tt class="py-op">,</tt> <tt class="py-string">'CDK5R2'</tt><tt class="py-op">,</tt><tt class="py-string">'CDCA8'</tt><tt class="py-op">,</tt><tt class="py-string">'CDC45L'</tt><tt class="py-op">,</tt><tt class="py-string">'CDKN1C'</tt><tt class="py-op">,</tt> <tt class="py-string">'CDC20'</tt><tt class="py-op">,</tt> <tt class="py-string">'CDCA3'</tt><tt class="py-op">,</tt> <tt class="py-string">'CDKL5'</tt> <tt class="py-op">]</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">         </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">    <tt class="py-comment">#RNA Helicases DDX series 'RTP4',</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">    <tt class="py-comment">#SSVM_DDX = [ 'DDX60', 'DDX17', 'DDX58']</tt> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">     </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">    <tt class="py-comment">#Programmed Cell Death</tt> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">    <tt id="link-40" class="py-name" targets="Variable ifr.common.constants.flu_genelists.SSVM_PCD=ifr.common.constants.flu_genelists-class.html#SSVM_PCD"><a title="ifr.common.constants.flu_genelists.SSVM_PCD" class="py-name" href="#" onclick="return doclink('link-40', 'SSVM_PCD', 'link-40');">SSVM_PCD</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'PDCD1LG2'</tt> <tt class="py-op">,</tt><tt class="py-string">'PCDHGA11'</tt><tt class="py-op">,</tt> <tt class="py-string">'PDCD4'</tt><tt class="py-op">,</tt> <tt class="py-string">'PCDHA3'</tt><tt class="py-op">,</tt> <tt class="py-string">'CASP7'</tt><tt class="py-op">,</tt><tt class="py-string">'CASP5'</tt><tt class="py-op">,</tt><tt class="py-string">'CASP4'</tt><tt class="py-op">,</tt><tt class="py-string">'CASP10'</tt> <tt class="py-op">]</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">     </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">    <tt class="py-comment">#Chemokines</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">    <tt id="link-41" class="py-name" targets="Variable ifr.common.constants.flu_genelists.SSVM_CHEMO=ifr.common.constants.flu_genelists-class.html#SSVM_CHEMO"><a title="ifr.common.constants.flu_genelists.SSVM_CHEMO" class="py-name" href="#" onclick="return doclink('link-41', 'SSVM_CHEMO', 'link-41');">SSVM_CHEMO</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'CX3CR1'</tt><tt class="py-op">,</tt><tt class="py-string">'CXCL6'</tt><tt class="py-op">,</tt><tt class="py-string">'CXCL11'</tt><tt class="py-op">,</tt><tt class="py-string">'CXCR5'</tt><tt class="py-op">,</tt><tt class="py-string">'CXCL10'</tt><tt class="py-op">,</tt><tt class="py-string">'CCL5'</tt><tt class="py-op">,</tt><tt class="py-string">'CCL11'</tt><tt class="py-op">,</tt> <tt class="py-string">'CCR1'</tt><tt class="py-op">,</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">                      <tt class="py-string">'CCR3'</tt><tt class="py-op">,</tt><tt class="py-string">'CCR6'</tt><tt class="py-op">,</tt><tt class="py-string">'CCR10'</tt><tt class="py-op">,</tt><tt class="py-string">'CCRL2'</tt><tt class="py-op">,</tt><tt class="py-string">'DARC'</tt><tt class="py-op">]</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line"> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">    <tt class="py-comment">#Cell Adhesion Molecules</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">    <tt id="link-42" class="py-name" targets="Variable ifr.common.constants.flu_genelists.SSVM_CAM=ifr.common.constants.flu_genelists-class.html#SSVM_CAM"><a title="ifr.common.constants.flu_genelists.SSVM_CAM" class="py-name" href="#" onclick="return doclink('link-42', 'SSVM_CAM', 'link-42');">SSVM_CAM</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'ICAM4'</tt><tt class="py-op">,</tt> <tt class="py-string">'ICAM3'</tt><tt class="py-op">,</tt> <tt class="py-string">'ICAM5'</tt><tt class="py-op">,</tt> <tt class="py-string">'MADCAM1'</tt><tt class="py-op">]</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">     </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">    <tt class="py-comment">#Cytokine-Cytokine Interaction</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">    <tt id="link-43" class="py-name" targets="Variable ifr.common.constants.flu_genelists.SSVM_CYT=ifr.common.constants.flu_genelists-class.html#SSVM_CYT"><a title="ifr.common.constants.flu_genelists.SSVM_CYT" class="py-name" href="#" onclick="return doclink('link-43', 'SSVM_CYT', 'link-43');">SSVM_CYT</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'IL16'</tt><tt class="py-op">,</tt> <tt class="py-string">'IL17RC'</tt><tt class="py-op">,</tt> <tt class="py-string">'IL18RAP'</tt><tt class="py-op">,</tt> <tt class="py-string">'IL22'</tt><tt class="py-op">,</tt> <tt class="py-string">'IL9'</tt><tt class="py-op">,</tt> <tt class="py-string">'SOCS1'</tt><tt class="py-op">,</tt> <tt class="py-string">'SOCS6'</tt><tt class="py-op">,</tt> <tt class="py-string">'SOCS3'</tt><tt class="py-op">]</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">     </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">    <tt class="py-comment">#Other Immune Response</tt> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">    <tt id="link-44" class="py-name" targets="Variable ifr.common.constants.flu_genelists.SSVM_IR=ifr.common.constants.flu_genelists-class.html#SSVM_IR"><a title="ifr.common.constants.flu_genelists.SSVM_IR" class="py-name" href="#" onclick="return doclink('link-44', 'SSVM_IR', 'link-44');">SSVM_IR</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'KIR2DL3'</tt><tt class="py-op">,</tt><tt class="py-string">'FCER2'</tt><tt class="py-op">,</tt><tt class="py-string">'FCER1G'</tt><tt class="py-op">,</tt><tt class="py-string">'FCRL2'</tt><tt class="py-op">,</tt><tt class="py-string">'CD8A'</tt><tt class="py-op">,</tt><tt class="py-string">'LY6E'</tt><tt class="py-op">,</tt> <tt class="py-string">'LY9'</tt><tt class="py-op">,</tt> <tt class="py-string">'MARCO'</tt><tt class="py-op">,</tt> <tt class="py-string">'TLR5'</tt><tt class="py-op">]</tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">     </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">    <tt class="py-comment">#Complement Pathway</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">    <tt id="link-45" class="py-name" targets="Variable ifr.common.constants.flu_genelists.SSVM_CP=ifr.common.constants.flu_genelists-class.html#SSVM_CP"><a title="ifr.common.constants.flu_genelists.SSVM_CP" class="py-name" href="#" onclick="return doclink('link-45', 'SSVM_CP', 'link-45');">SSVM_CP</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">'CR2'</tt><tt class="py-op">,</tt> <tt class="py-string">'C2'</tt><tt class="py-op">,</tt> <tt class="py-string">'C3AR1'</tt><tt class="py-op">,</tt> <tt class="py-string">'C1QA'</tt><tt class="py-op">,</tt> <tt class="py-string">'C1QB'</tt><tt class="py-op">]</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">     </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">         </tt>
+<a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line">    <tt id="link-46" class="py-name" targets="Variable ifr.common.constants.flu_genelists.PATHWAYS=ifr.common.constants.flu_genelists-class.html#PATHWAYS"><a title="ifr.common.constants.flu_genelists.PATHWAYS" class="py-name" href="#" onclick="return doclink('link-46', 'PATHWAYS', 'link-46');">PATHWAYS</a></tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt><tt class="py-number">1</tt><tt class="py-op">:</tt><tt class="py-op">(</tt><tt class="py-string">"Interferon Stimulated Genes"</tt><tt class="py-op">,</tt> <tt id="link-47" class="py-name"><a title="ifr.common.constants.flu_genelists.SSVM_ISG" class="py-name" href="#" onclick="return doclink('link-47', 'SSVM_ISG', 'link-34');">SSVM_ISG</a></tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line">                <tt class="py-number">2</tt><tt class="py-op">:</tt><tt class="py-op">(</tt><tt class="py-string">"Antigen Recognition Genes"</tt><tt class="py-op">,</tt> <tt id="link-48" class="py-name"><a title="ifr.common.constants.flu_genelists.SSVM_HLA" class="py-name" href="#" onclick="return doclink('link-48', 'SSVM_HLA', 'link-35');">SSVM_HLA</a></tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L108"></a><tt class="py-lineno">108</tt>  <tt class="py-line">                <tt class="py-number">3</tt><tt class="py-op">:</tt><tt class="py-op">(</tt><tt class="py-string">"TNF Super Family"</tt><tt class="py-op">,</tt> <tt id="link-49" class="py-name"><a title="ifr.common.constants.flu_genelists.SSVM_TNF" class="py-name" href="#" onclick="return doclink('link-49', 'SSVM_TNF', 'link-36');">SSVM_TNF</a></tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line">                <tt class="py-number">4</tt><tt class="py-op">:</tt><tt class="py-op">(</tt><tt class="py-string">"IL-1 Beta Receptor Family"</tt><tt class="py-op">,</tt> <tt id="link-50" class="py-name"><a title="ifr.common.constants.flu_genelists.SSVM_IL1" class="py-name" href="#" onclick="return doclink('link-50', 'SSVM_IL1', 'link-37');">SSVM_IL1</a></tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line">                <tt class="py-number">5</tt><tt class="py-op">:</tt><tt class="py-op">(</tt><tt class="py-string">"B Cell Maturation and Activation"</tt><tt class="py-op">,</tt> <tt id="link-51" class="py-name"><a title="ifr.common.constants.flu_genelists.SSVM_BCell" class="py-name" href="#" onclick="return doclink('link-51', 'SSVM_BCell', 'link-38');">SSVM_BCell</a></tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line">                <tt class="py-number">6</tt><tt class="py-op">:</tt><tt class="py-op">(</tt><tt class="py-string">"Cell Cycle Related"</tt><tt class="py-op">,</tt> <tt id="link-52" class="py-name"><a title="ifr.common.constants.flu_genelists.SSVM_CDC" class="py-name" href="#" onclick="return doclink('link-52', 'SSVM_CDC', 'link-39');">SSVM_CDC</a></tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line">                <tt class="py-number">7</tt><tt class="py-op">:</tt><tt class="py-op">(</tt><tt class="py-string">"Programmed Cell Death"</tt><tt class="py-op">,</tt> <tt id="link-53" class="py-name"><a title="ifr.common.constants.flu_genelists.SSVM_PCD" class="py-name" href="#" onclick="return doclink('link-53', 'SSVM_PCD', 'link-40');">SSVM_PCD</a></tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">                <tt class="py-number">8</tt><tt class="py-op">:</tt><tt class="py-op">(</tt><tt class="py-string">"Chemokines"</tt><tt class="py-op">,</tt> <tt id="link-54" class="py-name"><a title="ifr.common.constants.flu_genelists.SSVM_CHEMO" class="py-name" href="#" onclick="return doclink('link-54', 'SSVM_CHEMO', 'link-41');">SSVM_CHEMO</a></tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">                <tt class="py-number">9</tt><tt class="py-op">:</tt><tt class="py-op">(</tt><tt class="py-string">"Cell Adhesion Molecules"</tt><tt class="py-op">,</tt> <tt id="link-55" class="py-name"><a title="ifr.common.constants.flu_genelists.SSVM_CAM" class="py-name" href="#" onclick="return doclink('link-55', 'SSVM_CAM', 'link-42');">SSVM_CAM</a></tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line">                <tt class="py-number">10</tt><tt class="py-op">:</tt><tt class="py-op">(</tt><tt class="py-string">"Cytokine-Cytokine Receptor Signaling"</tt><tt class="py-op">,</tt> <tt id="link-56" class="py-name"><a title="ifr.common.constants.flu_genelists.SSVM_CYT" class="py-name" href="#" onclick="return doclink('link-56', 'SSVM_CYT', 'link-43');">SSVM_CYT</a></tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line">                <tt class="py-number">11</tt><tt class="py-op">:</tt><tt class="py-op">(</tt><tt class="py-string">"Complement Pathway"</tt><tt class="py-op">,</tt> <tt id="link-57" class="py-name"><a title="ifr.common.constants.flu_genelists.SSVM_CP" class="py-name" href="#" onclick="return doclink('link-57', 'SSVM_CP', 'link-45');">SSVM_CP</a></tt><tt class="py-op">)</tt><tt class="py-op">,</tt> </tt>
+<a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line">                <tt class="py-number">12</tt><tt class="py-op">:</tt><tt class="py-op">(</tt><tt class="py-string">"Other Immune Response"</tt><tt class="py-op">,</tt> <tt id="link-58" class="py-name"><a title="ifr.common.constants.flu_genelists.SSVM_IR" class="py-name" href="#" onclick="return doclink('link-58', 'SSVM_IR', 'link-44');">SSVM_IR</a></tt><tt class="py-op">)</tt> <tt class="py-op">}</tt> </tt>
+</div><a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line">     </tt>
+<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line"> </tt>
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line"><tt class="py-keyword">if</tt> <tt class="py-name">__name__</tt> <tt class="py-op">==</tt> <tt class="py-string">'__main__'</tt><tt class="py-op">:</tt> </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">    <tt class="py-keyword">pass</tt> </tt>
+<a name="L122"></a><tt class="py-lineno">122</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Sep 17 11:02:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

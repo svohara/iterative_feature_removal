@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ifr.interfaces.kegg</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ifr-module.html">Package&nbsp;ifr</a> ::
+        <a href="ifr.interfaces-module.html">Package&nbsp;interfaces</a> ::
+        Module&nbsp;kegg
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ifr.interfaces.kegg-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module kegg</h1><p class="nomargin-top"><span class="codelink"><a href="ifr.interfaces.kegg-pysrc.html">source&nbsp;code</a></span></p>
+<p>Created on Dec 21, 2012</p>
+
+<hr />
+<div class="fields">      <p><strong>Author:</strong>
+        Stephen O'Hara
+        <p>Interface for querying KEGG web service data given gene 
+        names</p>
+      </p>
+</div><!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Functions</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Functions"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.interfaces.kegg-module.html#kegg_get_gene_id" class="summary-sig-name">kegg_get_gene_id</a>(<span class="summary-sig-arg">g</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">CDK5</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">species_code</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">hsa</code><code class="variable-quote">'</code></span>)</span><br />
+      Return the KEGG gene identifier for a given common gene symbol.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.interfaces.kegg-pysrc.html#kegg_get_gene_id">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="kegg_get_pathway_info"></a><span class="summary-sig-name">kegg_get_pathway_info</span>(<span class="summary-sig-arg">p</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">path:hsa05222</code><code class="variable-quote">'</code></span>)</span><br />
+      Returns all the information for a given kegg pathway identifier</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.interfaces.kegg-pysrc.html#kegg_get_pathway_info">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="kegg_get_genes_from_pathway"></a><span class="summary-sig-name">kegg_get_genes_from_pathway</span>(<span class="summary-sig-arg">p</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">path:hsa05222</code><code class="variable-quote">'</code></span>)</span><br />
+      Returns a list of gene symbols that are listed as being included in a
+      given kegg pathway</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.interfaces.kegg-pysrc.html#kegg_get_genes_from_pathway">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.interfaces.kegg-module.html#kegg_get_pathway_name" class="summary-sig-name">kegg_get_pathway_name</a>(<span class="summary-sig-arg">p</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">path:hsa05164</code><code class="variable-quote">'</code></span>)</span><br />
+      Returns the kegg pathway name (description) for a given path 
+      identifier</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.interfaces.kegg-pysrc.html#kegg_get_pathway_name">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.interfaces.kegg-module.html#kegg_get_pathways_with_gene" class="summary-sig-name">kegg_get_pathways_with_gene</a>(<span class="summary-sig-arg">g</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">OAS1</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">species_code</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">hsa</code><code class="variable-quote">'</code></span>)</span><br />
+      Determines the set of known pathways associated to a specific gene</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.interfaces.kegg-pysrc.html#kegg_get_pathways_with_gene">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.interfaces.kegg-module.html#kegg_get_pathways_with_genelist" class="summary-sig-name">kegg_get_pathways_with_genelist</a>(<span class="summary-sig-arg">genelist</span>,
+        <span class="summary-sig-arg">species_code</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">hsa</code><code class="variable-quote">'</code></span>)</span><br />
+      Determines a set of known pathways associated with a list of genes.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.interfaces.kegg-pysrc.html#kegg_get_pathways_with_genelist">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="compute_kegg_annotations"></a><span class="summary-sig-name">compute_kegg_annotations</span>(<span class="summary-sig-arg">genelist</span>,
+        <span class="summary-sig-arg">species_code</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">hsa</code><code class="variable-quote">'</code></span>)</span><br />
+      Computes the data required to produce a bar chart for the genelist 
+      where the y-axis has kegg pathway annotations, and the x-axis is the 
+      count of genes in genelist that have that annotation.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.interfaces.kegg-pysrc.html#compute_kegg_annotations">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Variables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="'ifr.interfaces'"><code class="variable-quote">'</code><code class="variable-string">ifr.interfaces</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Function Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-FunctionDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="kegg_get_gene_id"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">kegg_get_gene_id</span>(<span class="sig-arg">g</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">CDK5</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">species_code</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">hsa</code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.interfaces.kegg-pysrc.html#kegg_get_gene_id">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return the KEGG gene identifier for a given common gene symbol.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>g</code></strong> - The gene common name, like &quot;OAS1&quot;</li>
+        <li><strong class="pname"><code>species_code</code></strong> - The code for the genome where this gene is from. See KEGG for 
+          more details. hsa is the human genome, mmu is mouse.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>The kegg gene id.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="kegg_get_pathway_name"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">kegg_get_pathway_name</span>(<span class="sig-arg">p</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">path:hsa05164</code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.interfaces.kegg-pysrc.html#kegg_get_pathway_name">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Returns the kegg pathway name (description) for a given path 
+  identifier</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>p</code></strong> - The kegg pathway identifier</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="kegg_get_pathways_with_gene"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">kegg_get_pathways_with_gene</span>(<span class="sig-arg">g</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">OAS1</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">species_code</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">hsa</code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.interfaces.kegg-pysrc.html#kegg_get_pathways_with_gene">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Determines the set of known pathways associated to a specific gene</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>g</code></strong> - The common gene symbol</li>
+        <li><strong class="pname"><code>species_code</code></strong> - Like &quot;hsa&quot; for human, &quot;mmu&quot; for mouse. See 
+          the KEGG documentation for available organism codes.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>Tuple (kegg_path_names, kegg_path_ids)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="kegg_get_pathways_with_genelist"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">kegg_get_pathways_with_genelist</span>(<span class="sig-arg">genelist</span>,
+        <span class="sig-arg">species_code</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">hsa</code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.interfaces.kegg-pysrc.html#kegg_get_pathways_with_genelist">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Determines a set of known pathways associated with a list of genes. 
+  This is done by repeatedly calling kegg_get_pathways_with_gene() function
+  for each gene in the list, and combining results where a pathway is 
+  listed for more than one of the genes in the list.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>genelist</code></strong> - A list of gene names</li>
+        <li><strong class="pname"><code>species_code</code></strong> - The KEGG organism code to search, &quot;hsa&quot; is human, 
+          &quot;mmu&quot; is mouse.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>A dictionary object, where the keys are pathway ids, and the 
+          values are tuples of format (description, num_genes). Description
+          is the descriptive label for the pathway, and num_genes indicates
+          how many of the genes in genelist were associated to this 
+          pathway.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Sep 17 11:02:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

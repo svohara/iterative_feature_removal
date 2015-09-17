@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ifr.common.ml_engines</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ifr-module.html">Package&nbsp;ifr</a> ::
+        <a href="ifr.common-module.html">Package&nbsp;common</a> ::
+        Module&nbsp;ml_engines
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ifr.common.ml_engines-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module ml_engines</h1><p class="nomargin-top"><span class="codelink"><a href="ifr.common.ml_engines-pysrc.html">source&nbsp;code</a></span></p>
+<p>Created on Dec 17, 2012</p>
+
+<hr />
+<div class="fields">      <p><strong>Author:</strong>
+        Stephen O'Hara
+        <p>This module defines a standard interface and implementation for 
+        a variety of machine learning (ml) algorithms for use as 
+        &quot;ml_engines&quot; for other modules, such as feature 
+        learning.</p>
+      </p>
+</div><!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Functions</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Functions"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.ml_engines-module.html#svm_engine" class="summary-sig-name">svm_engine</a>(<span class="summary-sig-arg">Train</span>,
+        <span class="summary-sig-arg">Test</span>,
+        <span class="summary-sig-arg">perm</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">common_scale</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">verbose</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">no_normalization</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">loss</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">l2</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">penalty</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">l1</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">dual</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">C</span>=<span class="summary-sig-default">0.5</span>,
+        <span class="summary-sig-arg">tol</span>=<span class="summary-sig-default">0.0001</span>,
+        <span class="summary-sig-arg">**kwargs</span>)</span><br />
+      svm randomized feature extraction engine Internal function that 
+      performs the &quot;engine&quot; of the sparse linear svc fitting of 
+      the data.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.ml_engines-pysrc.html#svm_engine">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.ml_engines-module.html#lr_engine" class="summary-sig-name">lr_engine</a>(<span class="summary-sig-arg">Train</span>,
+        <span class="summary-sig-arg">Test</span>,
+        <span class="summary-sig-arg">perm</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">common_scale</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">verbose</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">no_normalization</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">penalty</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">l1</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">intercept_scaling</span>=<span class="summary-sig-default">10</span>,
+        <span class="summary-sig-arg">C</span>=<span class="summary-sig-default">1.0</span>,
+        <span class="summary-sig-arg">tol</span>=<span class="summary-sig-default">1e-05</span>,
+        <span class="summary-sig-arg">**kwargs</span>)</span><br />
+      logistic regression (lr) classification engine Internal function that
+      performs the &quot;engine&quot; of the sparse linear regression 
+      fitting of the data.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.ml_engines-pysrc.html#lr_engine">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.ml_engines-module.html#ML_ENGINE_SVM" class="summary-sig-name">ML_ENGINE_SVM</a>(<span class="summary-sig-arg">Train</span>,
+        <span class="summary-sig-arg">Test</span>,
+        <span class="summary-sig-arg">perm</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">common_scale</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">verbose</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">no_normalization</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">loss</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">l2</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">penalty</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">l1</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">dual</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">C</span>=<span class="summary-sig-default">0.5</span>,
+        <span class="summary-sig-arg">tol</span>=<span class="summary-sig-default">0.0001</span>,
+        <span class="summary-sig-arg">**kwargs</span>)</span><br />
+      svm randomized feature extraction engine Internal function that 
+      performs the &quot;engine&quot; of the sparse linear svc fitting of 
+      the data.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.ml_engines-pysrc.html#svm_engine">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.ml_engines-module.html#ML_ENGINE_LR" class="summary-sig-name">ML_ENGINE_LR</a>(<span class="summary-sig-arg">Train</span>,
+        <span class="summary-sig-arg">Test</span>,
+        <span class="summary-sig-arg">perm</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">common_scale</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">verbose</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">no_normalization</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">penalty</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">l1</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">intercept_scaling</span>=<span class="summary-sig-default">10</span>,
+        <span class="summary-sig-arg">C</span>=<span class="summary-sig-default">1.0</span>,
+        <span class="summary-sig-arg">tol</span>=<span class="summary-sig-default">1e-05</span>,
+        <span class="summary-sig-arg">**kwargs</span>)</span><br />
+      logistic regression (lr) classification engine Internal function that
+      performs the &quot;engine&quot; of the sparse linear regression 
+      fitting of the data.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.ml_engines-pysrc.html#lr_engine">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Variables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="'ifr.common'"><code class="variable-quote">'</code><code class="variable-string">ifr.common</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Function Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-FunctionDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="svm_engine"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">svm_engine</span>(<span class="sig-arg">Train</span>,
+        <span class="sig-arg">Test</span>,
+        <span class="sig-arg">perm</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">common_scale</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">verbose</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">no_normalization</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">loss</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">l2</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">penalty</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">l1</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">dual</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">C</span>=<span class="sig-default">0.5</span>,
+        <span class="sig-arg">tol</span>=<span class="sig-default">0.0001</span>,
+        <span class="sig-arg">**kwargs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.ml_engines-pysrc.html#svm_engine">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>svm randomized feature extraction engine Internal function that 
+  performs the &quot;engine&quot; of the sparse linear svc fitting of the 
+  data.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>Train</code></strong> - A tuple (D,L) providing the data and labels for the training 
+          data, for example, as loaded by the idr.load_flu_mat function.</li>
+        <li><strong class="pname"><code>Test</code></strong> - A tuple (D,L) for the test data.</li>
+        <li><strong class="pname"><code>perm</code></strong> - The random factor/column permutation of the data. None means no 
+          permutation. Otherwise this is a permuted list of column indexes.
+          You can also use this parameter to perform non-permuted subset 
+          selection. Just provide a list of column indexes to include.</li>
+        <li><strong class="pname"><code>common_scale</code></strong> - If True, then the test data will be normalized using the 
+          centers/scale of the training data (i.e. &quot;common 
+          scale&quot;). This is a common thing to do in machine learning --
+          project the test samples onto the normalized coordinates of the 
+          training data before applying the model. This breaks, however, 
+          when training on H3N2 microarray data and testing on H1N1 because
+          the collection procedures result in very different scale 
+          expression data. It is better in this case to normalize each 
+          separately, and use the self-normalized test vectors with the 
+          trained model.</li>
+        <li><strong class="pname"><code>verbose</code></strong> - If True, incremental output to the console will be generated. 
+          Otherwise, the results will be returned silently.</li>
+        <li><strong class="pname"><code>no_normalization</code></strong> - If True, then the built-in normalizing done by this function will
+          be skipped. This is appropriate if the data being provided is 
+          already normalized.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>A tuple (test_accuracy, factors, clf, train_accuracy) where 
+          test_accuracy is the accuracy on the test data, factors are those
+          columns with non-zero coefficients used in the classifier, clf is
+          the trained classifier, and train_accuracy is the accuracy on the
+          training data.</dd>
+  </dl>
+<div class="fields">      <p><strong>Note:</strong>
+        Other parameters, loss, penalty, dual, C, tol, are input parameters
+        to the scikit-learn SVC classifier. Please see the documentation on
+        the LinearSVC for definitions.
+      </p>
+</div></td></tr></table>
+</div>
+<a name="lr_engine"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">lr_engine</span>(<span class="sig-arg">Train</span>,
+        <span class="sig-arg">Test</span>,
+        <span class="sig-arg">perm</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">common_scale</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">verbose</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">no_normalization</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">penalty</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">l1</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">intercept_scaling</span>=<span class="sig-default">10</span>,
+        <span class="sig-arg">C</span>=<span class="sig-default">1.0</span>,
+        <span class="sig-arg">tol</span>=<span class="sig-default">1e-05</span>,
+        <span class="sig-arg">**kwargs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.ml_engines-pysrc.html#lr_engine">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>logistic regression (lr) classification engine Internal function that 
+  performs the &quot;engine&quot; of the sparse linear regression fitting 
+  of the data.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>Train</code></strong> - A tuple (D,L) providing the data and labels for the training 
+          data, for example, as loaded by the idr.load_flu_mat function.</li>
+        <li><strong class="pname"><code>Test</code></strong> - A tuple (D,L) for the test data.</li>
+        <li><strong class="pname"><code>perm</code></strong> - The random factor/column permutation of the data. None means no 
+          permutation. Otherwise this is a permuted list of column indexes.
+          You can also use this parameter to perform non-permuted subset 
+          selection. Just provide a list of column indexes to include.</li>
+        <li><strong class="pname"><code>common_scale</code></strong> - If True, then the test data will be normalized using the 
+          centers/scale of the training data (i.e. &quot;common 
+          scale&quot;). This is a common thing to do in machine learning --
+          project the test samples onto the normalized coordinates of the 
+          training data before applying the model. This breaks, however, 
+          when training on H3N2 microarray data and testing on H1N1 because
+          the collection procedures result in very different scale 
+          expression data. It is better in this case to normalize each 
+          separately, and use the self-normalized test vectors with the 
+          trained model.</li>
+        <li><strong class="pname"><code>verbose</code></strong> - If True, incremental output to the console will be generated. 
+          Otherwise, the results will be returned silently.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>A tuple (test_accuracy, factors, clf, train_accuracy) where 
+          test_accuracy is the accuracy on the test data, factors are those
+          columns with non-zero coefficients used in the classifier, clf is
+          the trained classifier, and train_accuracy is the accuracy on the
+          training data.</dd>
+  </dl>
+<div class="fields">      <p><strong>Note:</strong>
+        Other parameters are input parameters to the scikit-learn logistic 
+        regression classifier (with L1 regularization). Please see the 
+        documentation on the LinearSVC for definitions.
+      </p>
+</div></td></tr></table>
+</div>
+<a name="ML_ENGINE_SVM"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ML_ENGINE_SVM</span>(<span class="sig-arg">Train</span>,
+        <span class="sig-arg">Test</span>,
+        <span class="sig-arg">perm</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">common_scale</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">verbose</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">no_normalization</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">loss</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">l2</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">penalty</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">l1</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">dual</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">C</span>=<span class="sig-default">0.5</span>,
+        <span class="sig-arg">tol</span>=<span class="sig-default">0.0001</span>,
+        <span class="sig-arg">**kwargs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.ml_engines-pysrc.html#svm_engine">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>svm randomized feature extraction engine Internal function that 
+  performs the &quot;engine&quot; of the sparse linear svc fitting of the 
+  data.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>Train</code></strong> - A tuple (D,L) providing the data and labels for the training 
+          data, for example, as loaded by the idr.load_flu_mat function.</li>
+        <li><strong class="pname"><code>Test</code></strong> - A tuple (D,L) for the test data.</li>
+        <li><strong class="pname"><code>perm</code></strong> - The random factor/column permutation of the data. None means no 
+          permutation. Otherwise this is a permuted list of column indexes.
+          You can also use this parameter to perform non-permuted subset 
+          selection. Just provide a list of column indexes to include.</li>
+        <li><strong class="pname"><code>common_scale</code></strong> - If True, then the test data will be normalized using the 
+          centers/scale of the training data (i.e. &quot;common 
+          scale&quot;). This is a common thing to do in machine learning --
+          project the test samples onto the normalized coordinates of the 
+          training data before applying the model. This breaks, however, 
+          when training on H3N2 microarray data and testing on H1N1 because
+          the collection procedures result in very different scale 
+          expression data. It is better in this case to normalize each 
+          separately, and use the self-normalized test vectors with the 
+          trained model.</li>
+        <li><strong class="pname"><code>verbose</code></strong> - If True, incremental output to the console will be generated. 
+          Otherwise, the results will be returned silently.</li>
+        <li><strong class="pname"><code>no_normalization</code></strong> - If True, then the built-in normalizing done by this function will
+          be skipped. This is appropriate if the data being provided is 
+          already normalized.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>A tuple (test_accuracy, factors, clf, train_accuracy) where 
+          test_accuracy is the accuracy on the test data, factors are those
+          columns with non-zero coefficients used in the classifier, clf is
+          the trained classifier, and train_accuracy is the accuracy on the
+          training data.</dd>
+  </dl>
+<div class="fields">      <p><strong>Note:</strong>
+        Other parameters, loss, penalty, dual, C, tol, are input parameters
+        to the scikit-learn SVC classifier. Please see the documentation on
+        the LinearSVC for definitions.
+      </p>
+</div></td></tr></table>
+</div>
+<a name="ML_ENGINE_LR"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ML_ENGINE_LR</span>(<span class="sig-arg">Train</span>,
+        <span class="sig-arg">Test</span>,
+        <span class="sig-arg">perm</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">common_scale</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">verbose</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">no_normalization</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">penalty</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">l1</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">intercept_scaling</span>=<span class="sig-default">10</span>,
+        <span class="sig-arg">C</span>=<span class="sig-default">1.0</span>,
+        <span class="sig-arg">tol</span>=<span class="sig-default">1e-05</span>,
+        <span class="sig-arg">**kwargs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.ml_engines-pysrc.html#lr_engine">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>logistic regression (lr) classification engine Internal function that 
+  performs the &quot;engine&quot; of the sparse linear regression fitting 
+  of the data.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>Train</code></strong> - A tuple (D,L) providing the data and labels for the training 
+          data, for example, as loaded by the idr.load_flu_mat function.</li>
+        <li><strong class="pname"><code>Test</code></strong> - A tuple (D,L) for the test data.</li>
+        <li><strong class="pname"><code>perm</code></strong> - The random factor/column permutation of the data. None means no 
+          permutation. Otherwise this is a permuted list of column indexes.
+          You can also use this parameter to perform non-permuted subset 
+          selection. Just provide a list of column indexes to include.</li>
+        <li><strong class="pname"><code>common_scale</code></strong> - If True, then the test data will be normalized using the 
+          centers/scale of the training data (i.e. &quot;common 
+          scale&quot;). This is a common thing to do in machine learning --
+          project the test samples onto the normalized coordinates of the 
+          training data before applying the model. This breaks, however, 
+          when training on H3N2 microarray data and testing on H1N1 because
+          the collection procedures result in very different scale 
+          expression data. It is better in this case to normalize each 
+          separately, and use the self-normalized test vectors with the 
+          trained model.</li>
+        <li><strong class="pname"><code>verbose</code></strong> - If True, incremental output to the console will be generated. 
+          Otherwise, the results will be returned silently.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>A tuple (test_accuracy, factors, clf, train_accuracy) where 
+          test_accuracy is the accuracy on the test data, factors are those
+          columns with non-zero coefficients used in the classifier, clf is
+          the trained classifier, and train_accuracy is the accuracy on the
+          training data.</dd>
+  </dl>
+<div class="fields">      <p><strong>Note:</strong>
+        Other parameters are input parameters to the scikit-learn logistic 
+        regression classifier (with L1 regularization). Please see the 
+        documentation on the LinearSVC for definitions.
+      </p>
+</div></td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Sep 17 11:02:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

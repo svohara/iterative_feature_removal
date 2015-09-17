@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ifr.common.plotting</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ifr-module.html">Package&nbsp;ifr</a> ::
+        <a href="ifr.common-module.html">Package&nbsp;common</a> ::
+        Module&nbsp;plotting
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ifr.common.plotting-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="ifr.common.plotting-module.html">Module ifr.common.plotting</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-docstring">'''</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-docstring">Created on Sep 12, 2013</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-docstring">@author: Stephen O'Hara</tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-docstring">Code to help with plotting distribution of gene expressions and other</tt> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-docstring">datat related to this code base.</tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-docstring">'''</tt> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt id="link-0" class="py-name" targets="Package ifr=ifr-module.html"><a title="ifr" class="py-name" href="#" onclick="return doclink('link-0', 'ifr', 'link-0');">ifr</a></tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-1" class="py-name"><a title="ifr" class="py-name" href="#" onclick="return doclink('link-1', 'ifr', 'link-0');">ifr</a></tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Package ifr.common=ifr.common-module.html"><a title="ifr.common" class="py-name" href="#" onclick="return doclink('link-2', 'common', 'link-2');">common</a></tt><tt class="py-op">.</tt><tt id="link-3" class="py-name" targets="Module ifr.common.utilities=ifr.common.utilities-module.html"><a title="ifr.common.utilities" class="py-name" href="#" onclick="return doclink('link-3', 'utilities', 'link-3');">utilities</a></tt> <tt class="py-keyword">import</tt> <tt id="link-4" class="py-name" targets="Function ifr.common.utilities.ttest_features()=ifr.common.utilities-module.html#ttest_features"><a title="ifr.common.utilities.ttest_features" class="py-name" href="#" onclick="return doclink('link-4', 'ttest_features', 'link-4');">ttest_features</a></tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">pylab</tt> <tt class="py-keyword">as</tt> <tt class="py-name">pl</tt> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">scipy</tt> <tt class="py-keyword">as</tt> <tt class="py-name">sp</tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"> </tt>
+<a name="gene_expression_boxplots"></a><div id="gene_expression_boxplots-def"><a name="L13"></a><tt class="py-lineno">13</tt> <a class="py-toggle" href="#" id="gene_expression_boxplots-toggle" onclick="return toggle('gene_expression_boxplots');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ifr.common.plotting-module.html#gene_expression_boxplots">gene_expression_boxplots</a><tt class="py-op">(</tt><tt class="py-param">D</tt><tt class="py-op">,</tt> <tt class="py-param">L</tt><tt class="py-op">,</tt> <tt class="py-param">genelist</tt><tt class="py-op">,</tt> <tt class="py-param">idxlist</tt><tt class="py-op">,</tt> <tt class="py-param">zscore</tt><tt class="py-op">=</tt><tt class="py-name">False</tt><tt class="py-op">,</tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line">                    <tt class="py-param">titlestr</tt><tt class="py-op">=</tt><tt class="py-string">'Distribution of Expression Levels for Selected Genes'</tt><tt class="py-op">,</tt> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line">                    <tt class="py-param">class_labels</tt><tt class="py-op">=</tt><tt class="py-op">[</tt><tt class="py-string">'Class 1'</tt><tt class="py-op">,</tt><tt class="py-string">'Class 2'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="gene_expression_boxplots-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="gene_expression_boxplots-expanded"><a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line">    <tt class="py-docstring">'''</tt> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"><tt class="py-docstring">    Function to show the univariate separability of a set of genes. For each gene in the list,</tt> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line"><tt class="py-docstring">    two box plots are drawn, one per class. The box plots show the distribution of expression</tt> </tt>
+<a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line"><tt class="py-docstring">    levels of the gene for each class, which gives an indicator of the univariate separability.</tt> </tt>
+<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line"><tt class="py-docstring">    @param D: The data matrix, rows=samples, cols=genes/features</tt> </tt>
+<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line"><tt class="py-docstring">    @param L: Labels, list or vector indicating class membership. Two-class analysis only.</tt> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line"><tt class="py-docstring">    @param genelist: The text names of the genes</tt> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line"><tt class="py-docstring">    @param idxlist: The column indexes into D associated with each gene in genelist</tt> </tt>
+<a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line"><tt class="py-docstring">    @param zscore: If true, the graph will use normalized values (mean-centered, scaled by std),</tt> </tt>
+<a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line"><tt class="py-docstring">    also known as "z-scores".</tt> </tt>
+<a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line"><tt class="py-docstring">    @param titlestr: The title for the resulting graph</tt> </tt>
+<a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line"><tt class="py-docstring">    '''</tt> </tt>
+<a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line">    <tt class="py-comment">#check to make sure labels are valid...integers for 2 classes, -1 / +1</tt> </tt>
+<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line">    <tt class="py-keyword">assert</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">set</tt><tt class="py-op">(</tt><tt class="py-name">L</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-number">2</tt> </tt>
+<a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line">    <tt class="py-name">binary_labels</tt> <tt class="py-op">=</tt> <tt class="py-name">list</tt><tt class="py-op">(</tt><tt class="py-name">set</tt><tt class="py-op">(</tt><tt class="py-name">L</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">    <tt class="py-comment">#print binary_labels</tt> </tt>
+<a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line">     </tt>
+<a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line">    <tt class="py-comment">#get ttest scores</tt> </tt>
+<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line">    <tt class="py-name">_</tt><tt class="py-op">,</tt> <tt class="py-name">TT</tt> <tt class="py-op">=</tt> <tt id="link-5" class="py-name"><a title="ifr.common.utilities.ttest_features" class="py-name" href="#" onclick="return doclink('link-5', 'ttest_features', 'link-4');">ttest_features</a></tt><tt class="py-op">(</tt><tt class="py-name">D</tt><tt class="py-op">,</tt> <tt class="py-name">L</tt><tt class="py-op">,</tt> <tt class="py-name">return_mat</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line">         </tt>
+<a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">zscore</tt><tt class="py-op">:</tt> </tt>
+<a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line">        <tt class="py-name">D</tt><tt class="py-op">,</tt><tt class="py-name">_</tt><tt class="py-op">,</tt><tt class="py-name">_</tt> <tt class="py-op">=</tt> <tt id="link-6" class="py-name"><a title="ifr" class="py-name" href="#" onclick="return doclink('link-6', 'ifr', 'link-0');">ifr</a></tt><tt class="py-op">.</tt><tt id="link-7" class="py-name" targets="Function ifr.common.utilities.normalize_data()=ifr.common.utilities-module.html#normalize_data"><a title="ifr.common.utilities.normalize_data" class="py-name" href="#" onclick="return doclink('link-7', 'normalize_data', 'link-7');">normalize_data</a></tt><tt class="py-op">(</tt><tt class="py-name">D</tt><tt class="py-op">)</tt> </tt>
+<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line">     </tt>
+<a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line">    <tt class="py-name">N</tt> <tt class="py-op">=</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">idxlist</tt><tt class="py-op">)</tt> </tt>
+<a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line">    <tt class="py-comment">#the following list completion is a complex nesting of commands to handle a small number</tt> </tt>
+<a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line">    <tt class="py-comment"># of genes that are too long to conveniently display, such as AFFX-HUMISGF3A/M97935_3_at,</tt> </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line">    <tt class="py-comment"># in which case "M97935_3_at" will be displayed. Simple names like "OAS1" should be unaffected.</tt> </tt>
+<a name="L43"></a><tt class="py-lineno">43</tt>  <tt class="py-line">    <tt class="py-name">class1_data</tt> <tt class="py-op">=</tt> <tt class="py-name">D</tt><tt class="py-op">[</tt><tt class="py-op">:</tt><tt class="py-op">,</tt><tt class="py-name">idxlist</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">L</tt><tt class="py-op">==</tt><tt class="py-name">binary_labels</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-op">:</tt><tt class="py-op">]</tt> </tt>
+<a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line">    <tt class="py-name">odds</tt> <tt class="py-op">=</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-number">2</tt><tt class="py-op">*</tt><tt class="py-name">N</tt><tt class="py-op">,</tt><tt class="py-number">2</tt><tt class="py-op">)</tt>  <tt class="py-comment">#class1 boxes will be at the odd ticks</tt> </tt>
+<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line">    <tt class="py-name">class2_data</tt> <tt class="py-op">=</tt> <tt class="py-name">D</tt><tt class="py-op">[</tt><tt class="py-op">:</tt><tt class="py-op">,</tt><tt class="py-name">idxlist</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">L</tt><tt class="py-op">==</tt><tt class="py-name">binary_labels</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-op">:</tt><tt class="py-op">]</tt> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line">    <tt class="py-name">evens</tt> <tt class="py-op">=</tt> <tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-number">2</tt><tt class="py-op">,</tt> <tt class="py-op">(</tt><tt class="py-number">2</tt><tt class="py-op">*</tt><tt class="py-name">N</tt><tt class="py-op">)</tt><tt class="py-op">+</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-number">2</tt><tt class="py-op">)</tt> <tt class="py-comment">#class2 boxes will be at the even ticks</tt> </tt>
+<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line">     </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line">    <tt class="py-name">genelist2</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt> <tt class="py-name">gg</tt><tt class="py-op">.</tt><tt class="py-name">split</tt><tt class="py-op">(</tt><tt class="py-string">"/"</tt><tt class="py-op">)</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-op">:</tt><tt class="py-number">12</tt><tt class="py-op">]</tt> <tt class="py-keyword">if</tt> <tt class="py-string">"/"</tt> <tt class="py-keyword">in</tt> <tt class="py-name">gg</tt> <tt class="py-keyword">else</tt> <tt class="py-name">gg</tt><tt class="py-op">[</tt><tt class="py-op">:</tt><tt class="py-number">12</tt><tt class="py-op">]</tt> <tt class="py-keyword">for</tt> <tt class="py-name">gg</tt> <tt class="py-keyword">in</tt> <tt class="py-name">genelist</tt><tt class="py-op">]</tt> </tt>
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line">    <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">hold</tt><tt class="py-op">(</tt><tt class="py-name">True</tt><tt class="py-op">)</tt> </tt>
+<a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line">     </tt>
+<a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line">    <tt class="py-comment">#draw boxplots for class1 at the odd ticks</tt> </tt>
+<a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line">    <tt class="py-name">rc</tt><tt class="py-op">=</tt> <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">boxplot</tt><tt class="py-op">(</tt> <tt class="py-name">class1_data</tt><tt class="py-op">,</tt> <tt class="py-name">sym</tt><tt class="py-op">=</tt><tt class="py-string">"b+"</tt><tt class="py-op">,</tt><tt class="py-name">patch_artist</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt> </tt>
+<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line">                    <tt class="py-name">positions</tt><tt class="py-op">=</tt><tt class="py-name">odds</tt><tt class="py-op">)</tt>  <tt class="py-comment">#the values for class -1</tt> </tt>
+<a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">p</tt> <tt class="py-keyword">in</tt> <tt class="py-name">rc</tt><tt class="py-op">[</tt><tt class="py-string">'boxes'</tt><tt class="py-op">]</tt><tt class="py-op">:</tt> <tt class="py-name">p</tt><tt class="py-op">.</tt><tt class="py-name">set_color</tt><tt class="py-op">(</tt><tt class="py-string">"b"</tt><tt class="py-op">)</tt> </tt>
+<a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line">     </tt>
+<a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line">    <tt class="py-comment">#draw boxplots for class2 at the even ticks</tt> </tt>
+<a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line">    <tt class="py-name">rc2</tt><tt class="py-op">=</tt><tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">boxplot</tt><tt class="py-op">(</tt> <tt class="py-name">class2_data</tt><tt class="py-op">,</tt> <tt class="py-name">sym</tt><tt class="py-op">=</tt><tt class="py-string">"rx"</tt><tt class="py-op">,</tt><tt class="py-name">patch_artist</tt><tt class="py-op">=</tt><tt class="py-name">True</tt><tt class="py-op">,</tt> </tt>
+<a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line">                    <tt class="py-name">positions</tt><tt class="py-op">=</tt><tt class="py-name">evens</tt><tt class="py-op">)</tt>  <tt class="py-comment">#the values for class +1</tt> </tt>
+<a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">p</tt> <tt class="py-keyword">in</tt> <tt class="py-name">rc2</tt><tt class="py-op">[</tt><tt class="py-string">'boxes'</tt><tt class="py-op">]</tt><tt class="py-op">:</tt> <tt class="py-name">p</tt><tt class="py-op">.</tt><tt class="py-name">set_color</tt><tt class="py-op">(</tt><tt class="py-string">"r"</tt><tt class="py-op">)</tt> </tt>
+<a name="L60"></a><tt class="py-lineno">60</tt>  <tt class="py-line">         </tt>
+<a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line">    <tt class="py-comment">#draw light vertical lines to group the box plot pairs</tt> </tt>
+<a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line">    <tt class="py-name">ax</tt> <tt class="py-op">=</tt> <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">gca</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line">    <tt class="py-name">yrange</tt> <tt class="py-op">=</tt> <tt class="py-name">ax</tt><tt class="py-op">.</tt><tt class="py-name">yaxis</tt><tt class="py-op">.</tt><tt class="py-name">get_majorticklocs</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line">    <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">vlines</tt><tt class="py-op">(</tt><tt class="py-name">sp</tt><tt class="py-op">.</tt><tt class="py-name">array</tt><tt class="py-op">(</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">+</tt><tt class="py-name">evens</tt><tt class="py-op">)</tt><tt class="py-op">+</tt><tt class="py-number">0.5</tt><tt class="py-op">,</tt> <tt class="py-name">yrange</tt><tt class="py-op">.</tt><tt class="py-name">min</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-name">yrange</tt><tt class="py-op">.</tt><tt class="py-name">max</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">,</tt> <tt class="py-name">color</tt><tt class="py-op">=</tt><tt class="py-string">'lightgray'</tt><tt class="py-op">,</tt> <tt class="py-name">linestyles</tt><tt class="py-op">=</tt><tt class="py-string">'solid'</tt><tt class="py-op">,</tt> </tt>
+<a name="L65"></a><tt class="py-lineno">65</tt>  <tt class="py-line">              <tt class="py-name">alpha</tt><tt class="py-op">=</tt><tt class="py-number">0.5</tt><tt class="py-op">)</tt> </tt>
+<a name="L66"></a><tt class="py-lineno">66</tt>  <tt class="py-line"> </tt>
+<a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line">    <tt class="py-comment">#draw the ttest-measure score for each feature at the top</tt> </tt>
+<a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line">    <tt class="py-name">x_pos_list</tt> <tt class="py-op">=</tt> <tt class="py-name">sp</tt><tt class="py-op">.</tt><tt class="py-name">array</tt><tt class="py-op">(</tt><tt class="py-name">range</tt><tt class="py-op">(</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-number">2</tt><tt class="py-op">*</tt><tt class="py-name">N</tt><tt class="py-op">+</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-number">2</tt><tt class="py-op">)</tt><tt class="py-op">)</tt><tt class="py-op">+</tt><tt class="py-number">0.5</tt> </tt>
+<a name="L69"></a><tt class="py-lineno">69</tt>  <tt class="py-line">    <tt class="py-name">y_pos</tt> <tt class="py-op">=</tt> <tt class="py-number">0.9</tt><tt class="py-op">*</tt><tt class="py-name">yrange</tt><tt class="py-op">.</tt><tt class="py-name">max</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">i</tt><tt class="py-op">,</tt><tt class="py-name">idx</tt> <tt class="py-keyword">in</tt> <tt class="py-name">enumerate</tt><tt class="py-op">(</tt><tt class="py-name">idxlist</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line">        <tt class="py-name">tscore</tt> <tt class="py-op">=</tt> <tt class="py-name">TT</tt><tt class="py-op">[</tt><tt class="py-name">idx</tt><tt class="py-op">,</tt><tt class="py-number">0</tt><tt class="py-op">]</tt> </tt>
+<a name="L72"></a><tt class="py-lineno">72</tt>  <tt class="py-line">        <tt class="py-comment">#pval = TT[idx,1]</tt> </tt>
+<a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line">        <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">text</tt><tt class="py-op">(</tt> <tt class="py-name">x_pos_list</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-name">y_pos</tt><tt class="py-op">,</tt> <tt class="py-string">"%2.1f"</tt><tt class="py-op">%</tt><tt class="py-name">tscore</tt><tt class="py-op">,</tt> <tt class="py-name">color</tt><tt class="py-op">=</tt><tt class="py-string">'blue'</tt><tt class="py-op">,</tt> <tt class="py-name">ha</tt><tt class="py-op">=</tt><tt class="py-string">'center'</tt><tt class="py-op">)</tt> </tt>
+<a name="L74"></a><tt class="py-lineno">74</tt>  <tt class="py-line">     </tt>
+<a name="L75"></a><tt class="py-lineno">75</tt>  <tt class="py-line">    <tt class="py-comment">#labels, titles, and tick marks</tt> </tt>
+<a name="L76"></a><tt class="py-lineno">76</tt>  <tt class="py-line">    <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">xlabel</tt><tt class="py-op">(</tt><tt class="py-string">"Gene"</tt><tt class="py-op">)</tt> </tt>
+<a name="L77"></a><tt class="py-lineno">77</tt>  <tt class="py-line">    <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">ylabel</tt><tt class="py-op">(</tt><tt class="py-string">"Expression Level"</tt><tt class="py-op">)</tt> </tt>
+<a name="L78"></a><tt class="py-lineno">78</tt>  <tt class="py-line">    <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">title</tt><tt class="py-op">(</tt><tt class="py-name">titlestr</tt><tt class="py-op">)</tt> </tt>
+<a name="L79"></a><tt class="py-lineno">79</tt>  <tt class="py-line">    <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">xticks</tt><tt class="py-op">(</tt> <tt class="py-name">x_pos_list</tt><tt class="py-op">,</tt> <tt class="py-name">genelist2</tt><tt class="py-op">,</tt> <tt class="py-name">rotation</tt><tt class="py-op">=</tt><tt class="py-string">'vertical'</tt><tt class="py-op">)</tt> </tt>
+<a name="L80"></a><tt class="py-lineno">80</tt>  <tt class="py-line">    <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">xlim</tt><tt class="py-op">(</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">,</tt><tt class="py-number">2</tt><tt class="py-op">*</tt><tt class="py-name">N</tt><tt class="py-op">+</tt><tt class="py-number">1</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L81"></a><tt class="py-lineno">81</tt>  <tt class="py-line"> </tt>
+<a name="L82"></a><tt class="py-lineno">82</tt>  <tt class="py-line">    <tt class="py-comment">#legend</tt> </tt>
+<a name="L83"></a><tt class="py-lineno">83</tt>  <tt class="py-line">    <tt class="py-name">r1</tt> <tt class="py-op">=</tt> <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">Rectangle</tt><tt class="py-op">(</tt><tt class="py-op">(</tt><tt class="py-number">0</tt><tt class="py-op">,</tt><tt class="py-number">0</tt><tt class="py-op">)</tt><tt class="py-op">,</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-name">fc</tt><tt class="py-op">=</tt><tt class="py-string">'b'</tt><tt class="py-op">)</tt> </tt>
+<a name="L84"></a><tt class="py-lineno">84</tt>  <tt class="py-line">    <tt class="py-name">r2</tt> <tt class="py-op">=</tt> <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">Rectangle</tt><tt class="py-op">(</tt><tt class="py-op">(</tt><tt class="py-number">0</tt><tt class="py-op">,</tt><tt class="py-number">0</tt><tt class="py-op">)</tt><tt class="py-op">,</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-number">1</tt><tt class="py-op">,</tt><tt class="py-name">fc</tt><tt class="py-op">=</tt><tt class="py-string">'r'</tt><tt class="py-op">)</tt>     </tt>
+<a name="L85"></a><tt class="py-lineno">85</tt>  <tt class="py-line">    <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">legend</tt><tt class="py-op">(</tt> <tt class="py-op">[</tt><tt class="py-name">r1</tt><tt class="py-op">,</tt><tt class="py-name">r2</tt><tt class="py-op">]</tt><tt class="py-op">,</tt><tt class="py-name">class_labels</tt><tt class="py-op">,</tt> <tt class="py-name">loc</tt><tt class="py-op">=</tt><tt class="py-number">4</tt><tt class="py-op">)</tt> </tt>
+<a name="L86"></a><tt class="py-lineno">86</tt>  <tt class="py-line"> </tt>
+<a name="L87"></a><tt class="py-lineno">87</tt>  <tt class="py-line">    <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">subplots_adjust</tt><tt class="py-op">(</tt><tt class="py-name">bottom</tt><tt class="py-op">=</tt><tt class="py-number">0.2</tt><tt class="py-op">,</tt> <tt class="py-name">left</tt><tt class="py-op">=</tt><tt class="py-number">0.05</tt><tt class="py-op">,</tt> <tt class="py-name">right</tt><tt class="py-op">=</tt><tt class="py-number">0.95</tt><tt class="py-op">)</tt> </tt>
+<a name="L88"></a><tt class="py-lineno">88</tt>  <tt class="py-line">    <tt class="py-name">pl</tt><tt class="py-op">.</tt><tt class="py-name">draw</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L89"></a><tt class="py-lineno">89</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Sep 17 11:02:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+###############################
+#  Directory Structure        #
+###############################
+The source code has the following top-level directory structure.
+
+  \api_doc      Contains html API documentation of the source code
+  \data         Contains required data files and stored results
+  \doc          The directory where this document is stored
+  \ifr          The top-level directory (package) of the core python source code. 
+                This package is what is documented in the api_doc directory.
+    
+  \scripts      A directory containing a script file that has top-level functions
+  				designed to make reproducing the results in our published work easy.
+  				The functions in the script modules use the ifr package, but are not
+  				themselves part of the api_doc, and may not be general-purpose
+  				for use by other researchers.
+    
+  README        A text file with some basic information
+  license.html  The html-format text of the software license.
+
+###############################
+#  Reproducing the Results    #
+###############################
+We have provided source code to allow for others to reproduce the
+results published in the following paper:
+
+Stephen O'Hara, Kun Wang, Richard A. Slayden, Alan R. Schenkel, Greg
+Huber, Corey S. O'Hern, Mark D. Shattuck and Michael Kirby "Iterative
+Feature Removal Yields Highly Discriminative Pathways," BMC Genomics,
+under review, 2013
+
+
+Change directory to the top level of the package (i.e., the directory
+where the README file is). Run the ipython interpreter. From within the
+interpreter, type the command:
+
+> run scripts/bmc_genomics_paper.py
+> 
+...which will load the required libraries and scripts into memory, but
+otherwise will do nothing else.
+
+The 'bmc_genomics_paper.py' script contains high level functions that
+will generate the figures and tables from our publication, and also
+serve as examples for calling on the underlying code base.
+
+As an example, you can type the following into the interpreter after
+loading the script:
+
+> figure_1_influenza()
+> 
+The result will be the plot of IFR iterations on the influenza data, as
+in figure 1 of the manuscript.
+
+###############################
+# Using IFR on your own data  #
+###############################
+
+To make using the ifr package as easy as possible, we recommend that you
+add the top-level directory of the IFR_Dist package to your PYTHONPATH,
+or install to your site_packages directory. Directions on how to do so
+can be found on the web.
+
+Assuming the ifr package has been correctly added to the appropriate
+path, you can import it into your own projects, or use it interactively
+with the interpreter. I highly recommend using the ipython interpreter
+over the base python interpreter.
+
+Here is an example of computing IFR on a given data set. We assume you
+have the ability to load your data into a python matrix. Look at the
+scipy (or numpy) function loadtxt(...) if you want to load data stored
+in text/csv files. The '>' symbol indicates the ipython interpreter
+prompt, and is not something you actually type. The '#' symbol are
+comments, again not something you would actually type in the
+interpreter.
+
+> import ifr
+> 
+# load your data matrix, D, here D should have rows as samples, features
+# as columns load your labels as well as a vector of integers, L.
+# note: D.shape[0] == len(L)
+ 
+# Also (optional) load feature names as list variable F.
+# len(F) == D.shape[1], so each column has a string name in F
+
+# for the sake of demonstration, we'll load the H3N2 influenza data
+> (D,L,T,S) = ifr.load_flu_mat()
+# NOTE: S is not used here, but it is the subject identifier for each
+# sample NOTE: T is not used either, and is the time interval for each
+# sample
+ 
+#gene names corresponding to Duke data
+> F = ifr.load_gene_ids(short_name_only=True)
+
+#note: we can partition your data for you using functions
+# found in the cross_validation module included in the ifr package
+> (D_train,L_train,D_test,L_test,_) = ifr.random_partition(D, L)
+> traindat = (D_train, L_train)  #grouping for convenience
+> testdat = (D_test, L_test)
+
+#now create an IFR object using your data the following uses defaults,
+#but you may need to pass additional keyword parameters to tune the
+#machine learning to your data. NOTE: do NOT name the ifr object 'ifr'
+#because that is the package name and things will break. Choose another
+#variable name, like I
+> I = ifr.IFR( traindat, testdat, feature_names=F)
+> I.computeAllIterations()
+> I.plotResults()
+
+#Note on the above, since there are three samples per subject in the H3N2 data
+# we really should have partitioned using
+# ifr.subject_partition_proportional(...) to prevent a single subject
+# from having some samples in train, some in test. Thus our graph has
+# accuracies that are too high due to subject overlap. This is an
+# exercise to the reader to try partitioning the data using the
+# aforementioned subject-aware splitting, and recreating the IFR results.
+
+#The removals per iteration are stored in the object. You can access the
+#data using a number of functions available in the object (see the api
+#docs), including one that will export the iterative removals to a text
+#file
+> I.export_iterations(fn="iterations.txt")
+
+
+##################################################
+# Using Pathway Classification on your own data  #
+##################################################
+
+If your data has feature names which are genes, and can be queried using
+the GATHER web interface (gather.genome.duke.edu), then you may wish to
+see if organizing the features from the first N iterations of IFR can
+generate discriminative classifiers. Choose N by looking at the results
+of the plotResults() method and determining at which point does the
+rolling average of the test accuracy fall below some acceptable value.
+
+#Continuing from above example, where object I is an IFR object with the
+#iterations already computed.
+#
+#Create a new pathway classifier object
+> pc = ifr.Pathway_Classifier( traindat, testdat, feature_names=F,
+                                numIter=15, ifr_obj=I)
+
+#Since we already have a pre-computed IFR object, we just need to tell
+#the pathway classifier to perform pathway analysis using a built-in IFRA
+# object (IFR Analysis object), initialized with the appropriate values.
+# We do this by passing in a dictionary of parameter settings to the
+# IFRA_kwargs argument of the initAnalysis method. In this case, we use
+# all defaults, and set the GO ontology depth to 5.
+#NOTE: This requires an internet connection, and it is not the fastest
+#thing in the world...
+> pc.initAnalysis( IFRA_kwargs={'depth':5} )
+> 
+#Once the annotations have been fetched, we can compute the top pathway
+# and pathway pair classifiers as follows.
+> pc.computePathwayClassifiers()
+> pc.computePathwayPairsClassifiers()
+
+#To get a list of the top pathway classifiers do the following
+> pc.getTopPathways()  # will return the top-10, but you can change
+ 
+#Similarly for the top pairs
+> pc.getTopPathwayPairs()
+

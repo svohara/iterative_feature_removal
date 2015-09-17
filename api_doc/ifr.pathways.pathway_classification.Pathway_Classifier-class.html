@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ifr.pathways.pathway_classification.Pathway_Classifier</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ifr-module.html">Package&nbsp;ifr</a> ::
+        <a href="ifr.pathways-module.html">Package&nbsp;pathways</a> ::
+        <a href="ifr.pathways.pathway_classification-module.html">Module&nbsp;pathway_classification</a> ::
+        Class&nbsp;Pathway_Classifier
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ifr.pathways.pathway_classification.Pathway_Classifier-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class Pathway_Classifier</h1><p class="nomargin-top"><span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier">source&nbsp;code</a></span></p>
+<p>Instances of this class are used to build classifiers based upon 
+  features selected with a combination of IFR and ontology analysis</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.pathways.pathway_classification.Pathway_Classifier-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">traindat</span>,
+        <span class="summary-sig-arg">testdat</span>,
+        <span class="summary-sig-arg">feature_names</span>,
+        <span class="summary-sig-arg">numIter</span>=<span class="summary-sig-default">30</span>,
+        <span class="summary-sig-arg">ifr_obj</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Constructor.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="initAnalysis"></a><span class="summary-sig-name">initAnalysis</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">IFR_Class</span>=<span class="summary-sig-default">&lt;class ifr.feature_selection.iterative_feature_removal.IFR at <code class="variable-ellipsis">...</code></span>,
+        <span class="summary-sig-arg">IFRA_Class</span>=<span class="summary-sig-default">&lt;class ifr.feature_selection.iterative_feature_removal.IFR_Ana<code class="variable-ellipsis">...</code></span>,
+        <span class="summary-sig-arg">IFR_kwargs</span>=<span class="summary-sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>,
+        <span class="summary-sig-arg">IFRA_kwargs</span>=<span class="summary-sig-default"><code class="variable-group">{</code><code class="variable-group">}</code></span>)</span><br />
+      Use this method to specify the IFR class and parameters as well as 
+      the IFR Analysis class and parameters used to construct the pathway 
+      classifiers.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier.initAnalysis">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.pathways.pathway_classification.Pathway_Classifier-class.html#_buildIFR" class="summary-sig-name" onclick="show_private();">_buildIFR</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">IFR_Class</span>=<span class="summary-sig-default">&lt;class ifr.feature_selection.iterative_feature_removal.IFR at <code class="variable-ellipsis">...</code></span>,
+        <span class="summary-sig-arg">**ifr_kwargs</span>)</span><br />
+      Builds an iterative feature removal object to be used to select the 
+      features which are then used to find discriminative pathways.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier._buildIFR">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.pathways.pathway_classification.Pathway_Classifier-class.html#_buildIFRA" class="summary-sig-name" onclick="show_private();">_buildIFRA</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">IFRA_Class</span>=<span class="summary-sig-default">&lt;class ifr.feature_selection.iterative_feature_removal.IFR_Ana<code class="variable-ellipsis">...</code></span>,
+        <span class="summary-sig-arg">**kwargs</span>)</span><br />
+      An IFRA object is an IFR Analysis object, which encapsulates the 
+      querying of an external ontology (GO, KEGG) given the features 
+      selected at each IFR iteration.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier._buildIFRA">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_pathway_classification"></a><span class="summary-sig-name">_pathway_classification</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">genelist</span>,
+        <span class="summary-sig-arg">common_scale</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Given a genelist from the data set, such as a collection of genes 
+      belonging to a specific pathway, this function computes the accuracy 
+      of a standard (L2) SVM classifier</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier._pathway_classification">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.pathways.pathway_classification.Pathway_Classifier-class.html#getGenelistForPathway" class="summary-sig-name">getGenelistForPathway</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">pw_name</span>)</span><br />
+      Use this function to get the list of genes that are part of a given 
+      pathway classifier.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier.getGenelistForPathway">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.pathways.pathway_classification.Pathway_Classifier-class.html#computePathwayClassifiers" class="summary-sig-name">computePathwayClassifiers</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">numIter</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">min_size</span>=<span class="summary-sig-default">1</span>)</span><br />
+      Determines which pathways are represented by the genes selected 
+      within numIter iterations of Iterative Feature Removal, and then 
+      builds a classifier for each pathway to determine how discriminative 
+      each pathway is.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier.computePathwayClassifiers">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.pathways.pathway_classification.Pathway_Classifier-class.html#computePathwayPairsClassifiers" class="summary-sig-name">computePathwayPairsClassifiers</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">verbose</span>=<span class="summary-sig-default">False</span>)</span><br />
+      After having computed the pathway classifiers, this method will 
+      compute the accuracy when combining the genes from pairs of pathways.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier.computePathwayPairsClassifiers">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.pathways.pathway_classification.Pathway_Classifier-class.html#getTopPathways" class="summary-sig-name">getTopPathways</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">X</span>=<span class="summary-sig-default">10</span>)</span><br />
+      Returns the top X highest-accuracy pathways</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier.getTopPathways">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getTopPathwayPairs"></a><span class="summary-sig-name">getTopPathwayPairs</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">X</span>=<span class="summary-sig-default">10</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier.getTopPathwayPairs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.pathways.pathway_classification.Pathway_Classifier-class.html#getPathwayPairsDict" class="summary-sig-name">getPathwayPairsDict</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Return a dictionary where the key is a pathway pair string, and the 
+      value is the accuracy.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier.getPathwayPairsDict">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">traindat</span>,
+        <span class="sig-arg">testdat</span>,
+        <span class="sig-arg">feature_names</span>,
+        <span class="sig-arg">numIter</span>=<span class="sig-default">30</span>,
+        <span class="sig-arg">ifr_obj</span>=<span class="sig-default">None</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Constructor.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>traindat</code></strong> - Training data specified as a tuple (D,L) where D is the data 
+          matrix, rows are samples and columns are features. L is a label 
+          vector.</li>
+        <li><strong class="pname"><code>testdat</code></strong> - Tuple (D,L), as per traindat, but this specifies the testing 
+          data.</li>
+        <li><strong class="pname"><code>feature_names</code></strong> - A list which has a gene name for each feature column. Length of 
+          feature_names should be same as number of columns in the training
+          data matrix.</li>
+        <li><strong class="pname"><code>ifr_obj</code></strong> - If an iterative feature removal object already exists for this 
+          data, you may provide it here. Otherwise, specify None, and a new
+          ifr object can be built internally.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_buildIFR"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_buildIFR</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">IFR_Class</span>=<span class="sig-default">&lt;class ifr.feature_selection.iterative_feature_removal.IFR at <code class="variable-ellipsis">...</code></span>,
+        <span class="sig-arg">**ifr_kwargs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier._buildIFR">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Builds an iterative feature removal object to be used to select the 
+  features which are then used to find discriminative pathways.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>IFR_Class</code></strong> - Defaults to the base IFR class, but subclasses could work as well</li>
+        <li><strong class="pname"><code>ifr_kwargs</code></strong> - A dictionary of keyword arguments that will be passed onto the 
+          constructor of the ifr object. If None, then a default set is 
+          used that is appropriate for the influenza data.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_buildIFRA"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_buildIFRA</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">IFRA_Class</span>=<span class="sig-default">&lt;class ifr.feature_selection.iterative_feature_removal.IFR_Ana<code class="variable-ellipsis">...</code></span>,
+        <span class="sig-arg">**kwargs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier._buildIFRA">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>An IFRA object is an IFR Analysis object, which encapsulates the 
+  querying of an external ontology (GO, KEGG) given the features selected 
+  at each IFR iteration.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>IFRA_Class</code></strong> - The name of the class for the IFR Analysis, the default being 
+          ifr.IFR_Analysis_GO</li>
+        <li><strong class="pname"><code>kwargs</code></strong> - The keyword arguments will be passed onto the 
+          compute_annotations_per_iteration() method of the IFRA_Class 
+          instance.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getGenelistForPathway"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getGenelistForPathway</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">pw_name</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier.getGenelistForPathway">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Use this function to get the list of genes that are part of a given 
+  pathway classifier. You must have already computed pathway classifiers. 
+  This function should be used instead of directly accessing the .pathways 
+  member variable because this will replace the known aliases.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="computePathwayClassifiers"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">computePathwayClassifiers</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">numIter</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">min_size</span>=<span class="sig-default">1</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier.computePathwayClassifiers">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Determines which pathways are represented by the genes selected within
+  numIter iterations of Iterative Feature Removal, and then builds a 
+  classifier for each pathway to determine how discriminative each pathway 
+  is.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>numIter</code></strong> - How many iterations of the IFR gene sets should be used in 
+          constructing the 'pathways' used to build the pathway 
+          classifiers. This number should be &lt;= self.numIter, which is 
+          the number of iterations that annotations were processed for. If 
+          None, then all iterations with annotations will be processed.</li>
+        <li><strong class="pname"><code>min_size</code></strong> - What is the minimum number of genes in an IFR iteration that must
+          have the pathway label for that pathway to be used. @return 
+          (acc_dict, d), where acc_dict is a dictionary keyed by pathway 
+          name and value is the classification accuracy; d is a dictionary 
+          keyed by pathway name with values being the list of genes that 
+          were included in that pathway from the GO analysis.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="computePathwayPairsClassifiers"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">computePathwayPairsClassifiers</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">verbose</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier.computePathwayPairsClassifiers">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>After having computed the pathway classifiers, this method will 
+  compute the accuracy when combining the genes from pairs of pathways.</p>
+  <dl class="fields">
+    <dt>Returns:</dt>
+        <dd>A results dictionary keyed by (i,j), which is the combination of 
+          pathways indexed by i and j, and the values are the tuple: 
+          (accuracy, pathway_name_i + pathway_name_j, number_of_genes)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getTopPathways"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getTopPathways</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">X</span>=<span class="sig-default">10</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier.getTopPathways">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Returns the top X highest-accuracy pathways</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>X</code></strong> - How many of the top discriminative pathways do you want returned.
+          Specify None for all.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>(pathway_name, accuracy) sorted by accuracy (high to low)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getPathwayPairsDict"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getPathwayPairsDict</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.pathways.pathway_classification-pysrc.html#Pathway_Classifier.getPathwayPairsDict">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Return a dictionary where the key is a pathway pair string, and the 
+  value is the accuracy. Example: { 'cell cycle + protein metabolism':0.68 
+  }</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Sep 17 11:02:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ifr.common.cross_validation</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ifr-module.html">Package&nbsp;ifr</a> ::
+        <a href="ifr.common-module.html">Package&nbsp;common</a> ::
+        Module&nbsp;cross_validation
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ifr.common.cross_validation-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module cross_validation</h1><p class="nomargin-top"><span class="codelink"><a href="ifr.common.cross_validation-pysrc.html">source&nbsp;code</a></span></p>
+<p>Created on Sep 6, 2013</p>
+
+<hr />
+<div class="fields">      <p><strong>Author:</strong>
+        Stephen O'Hara
+        <p>Module with functions helpful to generate cross-validation 
+        splits of data.</p>
+        <p>This module is a refactoring and extension of code previously 
+        found in the svo_util.data_mgmt module.</p>
+      </p>
+</div><!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Functions</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Functions"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.cross_validation-module.html#CV_Generator" class="summary-sig-name">CV_Generator</a>(<span class="summary-sig-arg">n</span>,
+        <span class="summary-sig-arg">func</span>,
+        <span class="summary-sig-arg">*args</span>,
+        <span class="summary-sig-arg">**kwargs</span>)</span><br />
+      The function creates an iterator (generator) that yields (train_idxs,
+      test_idxs) for use in cross-validating machine learning methods.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#CV_Generator">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.cross_validation-module.html#StratifiedShuffleSplitSubjects" class="summary-sig-name">StratifiedShuffleSplitSubjects</a>(<span class="summary-sig-arg">n</span>,
+        <span class="summary-sig-arg">L</span>,
+        <span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">frac</span>)</span><br />
+      This function produces a generator that yields train/test index sets 
+      based on the subject_partition_proportional() splitting methodology.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#StratifiedShuffleSplitSubjects">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.cross_validation-module.html#subject_partition" class="summary-sig-name">subject_partition</a>(<span class="summary-sig-arg">D</span>,
+        <span class="summary-sig-arg">L</span>,
+        <span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">frac</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">subject_id</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Partitions data to leave one or more subjects out.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#subject_partition">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.cross_validation-module.html#subject_partition_proportional" class="summary-sig-name">subject_partition_proportional</a>(<span class="summary-sig-arg">D</span>,
+        <span class="summary-sig-arg">L</span>,
+        <span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">frac</span>=<span class="summary-sig-default">None</span>)</span><br />
+      This is similar to subject-based splitting, but it first stratifies 
+      the data into the class labels (unique entries in L), and performs 
+      subject partitioning in each stratification.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#subject_partition_proportional">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.cross_validation-module.html#random_partition" class="summary-sig-name">random_partition</a>(<span class="summary-sig-arg">D</span>,
+        <span class="summary-sig-arg">L</span>,
+        <span class="summary-sig-arg">pctTrain</span>=<span class="summary-sig-default">0.75</span>,
+        <span class="summary-sig-arg">proportional_labels</span>=<span class="summary-sig-default">True</span>)</span><br />
+      Partitions Data matrix and associated Label vector into randomized 
+      Train and Test partitions.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#random_partition">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.cross_validation-module.html#subject_partition_idxs" class="summary-sig-name">subject_partition_idxs</a>(<span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">frac</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">subject_id</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Creates a cross-validation partitioning by splitting the indexes 
+      sensitive to the subject labels (to prevent subject overlap).</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#subject_partition_idxs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.cross_validation-module.html#subject_partition_proportional_idxs" class="summary-sig-name">subject_partition_proportional_idxs</a>(<span class="summary-sig-arg">L</span>,
+        <span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">frac</span>=<span class="summary-sig-default">None</span>)</span><br />
+      This is similar to subject-based splitting, but it first stratifies 
+      the data into the class labels (unique entries in L), and performs 
+      subject partitioning in each stratification.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#subject_partition_proportional_idxs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.cross_validation-module.html#random_partition_idxs" class="summary-sig-name">random_partition_idxs</a>(<span class="summary-sig-arg">L</span>,
+        <span class="summary-sig-arg">frac</span>=<span class="summary-sig-default">0.25</span>,
+        <span class="summary-sig-arg">proportional_labels</span>=<span class="summary-sig-default">True</span>)</span><br />
+      Generates indexes to partition data for train/test splits.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#random_partition_idxs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_partition_data"></a><span class="summary-sig-name">_partition_data</span>(<span class="summary-sig-arg">D</span>,
+        <span class="summary-sig-arg">L</span>,
+        <span class="summary-sig-arg">partition_idxs</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#_partition_data">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_get_test_subjects"></a><span class="summary-sig-name">_get_test_subjects</span>(<span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">partition_idxs</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#_get_test_subjects">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Variables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="'ifr.common'"><code class="variable-quote">'</code><code class="variable-string">ifr.common</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Function Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-FunctionDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="CV_Generator"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">CV_Generator</span>(<span class="sig-arg">n</span>,
+        <span class="sig-arg">func</span>,
+        <span class="sig-arg">*args</span>,
+        <span class="sig-arg">**kwargs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#CV_Generator">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>The function creates an iterator (generator) that yields (train_idxs, 
+  test_idxs) for use in cross-validating machine learning methods. The 
+  generator produced is intended to be compatible for use with sklearn 
+  functions that take CV objects.</p>
+  <p>For example:</p>
+<pre class="literalblock">
+ S = sp.array([1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8])
+ f = subject_partition_idxs
+ cvg = CV_Generator(5, f, S, frac=0.25)
+ for (train_idxs,test_idxs) in cvg:
+     print &quot;Train idxs: %s&quot;%str(train_idxs)
+     print &quot;Test idxs: %s&quot;%str(test_idxs)
+</pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>n</code></strong> - The number of splits to generate</li>
+        <li><strong class="pname"><code>func</code></strong> - The splitting function that returns (train_idxs, test_idxs, 
+          _aux_info), such as subject_partition_idxs</li>
+        <li><strong class="pname"><code>args</code></strong> - The arguments required by func</li>
+        <li><strong class="pname"><code>kwargs</code></strong> - The keyword arguments required by func</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>A cross-validation index generator.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="StratifiedShuffleSplitSubjects"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">StratifiedShuffleSplitSubjects</span>(<span class="sig-arg">n</span>,
+        <span class="sig-arg">L</span>,
+        <span class="sig-arg">S</span>,
+        <span class="sig-arg">frac</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#StratifiedShuffleSplitSubjects">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This function produces a generator that yields train/test index sets 
+  based on the subject_partition_proportional() splitting methodology. This
+  pattern should be compatible with scikits.learn (sklearn) functions that 
+  take a cross validation iterator as input.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>n</code></strong> - The number of partitions to generate</li>
+        <li><strong class="pname"><code>L</code></strong> - The vector of labels, one integer per sample</li>
+        <li><strong class="pname"><code>S</code></strong> - The vector of subject ids, one integer per sample</li>
+        <li><strong class="pname"><code>frac</code></strong> - The fraction of the data used for testing.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>A generator that can be used to iterate over the splits</dd>
+  </dl>
+<div class="fields">      <p><strong>Note:</strong>
+        This is just a convenience wrapper to using CV_Generator(...)
+      </p>
+</div></td></tr></table>
+</div>
+<a name="subject_partition"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">subject_partition</span>(<span class="sig-arg">D</span>,
+        <span class="sig-arg">L</span>,
+        <span class="sig-arg">S</span>,
+        <span class="sig-arg">frac</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">subject_id</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#subject_partition">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Partitions data to leave one or more subjects out. This is useful when
+  you have data with subject overlap, and you wish to cross validate by 
+  leaving out all samples for a given subject id.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>D</code></strong> - The data matrix, samples are in rows. Features in columns.</li>
+        <li><strong class="pname"><code>L</code></strong> - A vector of target labels.</li>
+        <li><strong class="pname"><code>S</code></strong> - A vector of subject ids, which indicate which subject the data 
+          was sampled from.</li>
+        <li><strong class="pname"><code>frac</code></strong> - Optional. Specify a fraction, such as 0.25, which indicates the 
+          fraction of subjects to randomly leave out. If none, then only 
+          one subject id will be selected.</li>
+        <li><strong class="pname"><code>subject_id</code></strong> - Optional. Set this parameter to an integer to specify the 
+          subject_id to use in the loso partition. If None, then a random 
+          subject will be chosen. NOTE: Only used if frac is None.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>( train_data, train_labels, test_data, test_labels, test_ids)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="subject_partition_proportional"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">subject_partition_proportional</span>(<span class="sig-arg">D</span>,
+        <span class="sig-arg">L</span>,
+        <span class="sig-arg">S</span>,
+        <span class="sig-arg">frac</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#subject_partition_proportional">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This is similar to subject-based splitting, but it first stratifies 
+  the data into the class labels (unique entries in L), and performs 
+  subject partitioning in each stratification. This allows the user to have
+  train/test splits that have no subject id overlap while also having 
+  approximately the same proportion of class labels.</p>
+  <dl class="fields">
+    <dt>Returns:</dt>
+        <dd>( train_data, train_labels, test_data, test_labels, test_ids)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="random_partition"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">random_partition</span>(<span class="sig-arg">D</span>,
+        <span class="sig-arg">L</span>,
+        <span class="sig-arg">pctTrain</span>=<span class="sig-default">0.75</span>,
+        <span class="sig-arg">proportional_labels</span>=<span class="sig-default">True</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#random_partition">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Partitions Data matrix and associated Label vector into randomized 
+  Train and Test partitions.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>D</code></strong> - The data matrix, samples in rows, as a numpy array.</li>
+        <li><strong class="pname"><code>L</code></strong> - The label vector corresponding to D, as a numpy array.</li>
+        <li><strong class="pname"><code>pctTrain</code></strong> - The percentage of samples to include in training partition</li>
+        <li><strong class="pname"><code>proportional_labels</code></strong> - If true, the pctTrain will be applied to each label. If false, 
+          pctTrain will be applied to the entire data set, ignoring labels.
+          Only with large data sets having approximately equal labels 
+          should you not do proportional partitioning.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>(Dtrain, Ltrain, Dtest, Ltest, p), where p is the permutation</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="subject_partition_idxs"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">subject_partition_idxs</span>(<span class="sig-arg">S</span>,
+        <span class="sig-arg">frac</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">subject_id</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#subject_partition_idxs">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Creates a cross-validation partitioning by splitting the indexes 
+  sensitive to the subject labels (to prevent subject overlap). This 
+  generates 'leave one subject out' or 'leave p subjects out'</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>S</code></strong> - The subject ids per sample. len(S) is the number of samples in 
+          the data set</li>
+        <li><strong class="pname"><code>frac</code></strong> - If None, then leave-one-subject out is performed. Else, leave p 
+          subjects out where p is the fraction of the unique subject 
+          labels.</li>
+        <li><strong class="pname"><code>subject_id</code></strong> - Ignored if frac is not None. This is the specific subject_id to 
+          be used for testing. If None, then a single random id is chosen 
+          uniformly over the set of unique subject ids. @return (train 
+          indexes, test indexes, test ids )</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="subject_partition_proportional_idxs"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">subject_partition_proportional_idxs</span>(<span class="sig-arg">L</span>,
+        <span class="sig-arg">S</span>,
+        <span class="sig-arg">frac</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#subject_partition_proportional_idxs">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This is similar to subject-based splitting, but it first stratifies 
+  the data into the class labels (unique entries in L), and performs 
+  subject partitioning in each stratification. This allows the user to have
+  train/test splits that have no subject id overlap while also having 
+  approximately the same proportion of class labels.</p>
+  <dl class="fields">
+    <dt>Returns:</dt>
+        <dd>(train_idxs, test_idxs, test_ids)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="random_partition_idxs"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">random_partition_idxs</span>(<span class="sig-arg">L</span>,
+        <span class="sig-arg">frac</span>=<span class="sig-default">0.25</span>,
+        <span class="sig-arg">proportional_labels</span>=<span class="sig-default">True</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.cross_validation-pysrc.html#random_partition_idxs">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Generates indexes to partition data for train/test splits. This 
+  function can generate random partitioning (ShuffleSplit) or random 
+  partitioning where the labels are kept proportional (Stratified 
+  Shuffle).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>L</code></strong> - The label vector as a numpy array or list. This is used to get 
+          the number of samples in the data len(L), and also for data 
+          stratification along class labels if proportional_labels is True.</li>
+        <li><strong class="pname"><code>frac</code></strong> - The percentage of samples to include in test partition</li>
+        <li><strong class="pname"><code>proportional_labels</code></strong> - If true, the frac will be applied to each label. If false, frac 
+          will be applied to the entire data set, ignoring labels. Only 
+          with large data sets having approximately equal labels should you
+          NOT do proportional partitioning.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>(train_idxs, test_idxs, p), where p is the random permutation or 
+          list of permutations (one per class) if proportional is True.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Sep 17 11:02:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

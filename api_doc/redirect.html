@@ -1,0 +1,38 @@
+<html><head><title>Epydoc Redirect Page</title>
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+<!--
+var pages = ["ifr.feature_selection.iterative_feature_removal.IFR_Analysis_KEGG-c", "ifr.feature_selection.iterative_feature_removal.IFR_Analysis_GO-c", "ifr.pathways.pathway_classification.Pathway_Classifier-c", "ifr.feature_selection.iterative_feature_removal.IFR-c", "ifr.feature_selection.iterative_feature_removal-m", "ifr.interfaces.data_sources.C45_data-c", "ifr.interfaces.data_sources.CSV_data-c", "ifr.pathways.pathway_classification-m", "ifr.common.constants.flu_genelists-c", "ifr.interfaces.gather.gather-c", "ifr.common.cross_validation-m", "ifr.interfaces.data_sources-m", "ifr.interfaces.affymetrix-m", "ifr.common.ml_engines-m", "ifr.feature_selection-m", "ifr.interfaces.gather-m", "ifr.common.constants-m", "ifr.common.utilities-m", "ifr.common.plotting-m", "ifr.interfaces.kegg-m", "ifr.interfaces-m", "ifr.pathways-m", "ifr.common-m", "ifr-m"];
+var dottedName = get_anchor();
+if (dottedName) {
+    var target = redirect_url(dottedName);
+    if (target) window.location.replace(target);
+}
+// -->
+</script>
+
+<h3>Epydoc Auto-redirect page</h3>
+
+<p>When javascript is enabled, this page will redirect URLs of
+the form <tt>redirect.html#<i>dotted.name</i></tt> to the
+documentation for the object with the given fully-qualified
+dotted name.</p>
+<p><a id="message"> &nbsp; </a></p>
+
+<script type="text/javascript">
+<!--
+if (dottedName) {
+    var msg = document.getElementById("message");
+    msg.innerHTML = "No documentation found for <tt>"+
+                    dottedName+"</tt>";
+}
+// -->
+</script>
+
+</body>
+</html>

@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ifr.common.utilities</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ifr-module.html">Package&nbsp;ifr</a> ::
+        <a href="ifr.common-module.html">Package&nbsp;common</a> ::
+        Module&nbsp;utilities
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ifr.common.utilities-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module utilities</h1><p class="nomargin-top"><span class="codelink"><a href="ifr.common.utilities-pysrc.html">source&nbsp;code</a></span></p>
+<p>Created on Sep 25, 2012</p>
+
+<hr />
+<div class="fields">      <p><strong>Author:</strong>
+        Stephen O'Hara
+        <p>Misc. utility functions that are used throughout the code 
+        base.</p>
+      </p>
+</div><!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Functions</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Functions"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="fetch_data"></a><span class="summary-sig-name">fetch_data</span>(<span class="summary-sig-arg">url</span>,
+        <span class="summary-sig-arg">params</span>,
+        <span class="summary-sig-arg">method</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">POST</code><code class="variable-quote">'</code></span>)</span><br />
+      Convenient wrapper around urllib functions to post/get a url to a web
+      server and get the results.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#fetch_data">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_reporthook"></a><span class="summary-sig-name">_reporthook</span>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>,
+        <span class="summary-sig-arg">c</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#_reporthook">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.utilities-module.html#download_file" class="summary-sig-name">download_file</a>(<span class="summary-sig-arg">url</span>,
+        <span class="summary-sig-arg">dest_file</span>)</span><br />
+      Downloads a file given by a url (such as one of the zipfiles for the 
+      kent ridge biomedical repository), and stores the file to the 
+      destination directory.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#download_file">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.utilities-module.html#get_official_name" class="summary-sig-name">get_official_name</a>(<span class="summary-sig-arg">gene</span>,
+        <span class="summary-sig-arg">entrezgene</span>=<span class="summary-sig-default">False</span>)</span><br />
+      For a given gene symbol, like ARTS-1, return the official gene name, 
+      such as ERAP1.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#get_official_name">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="rolling_average"></a><span class="summary-sig-name">rolling_average</span>(<span class="summary-sig-arg">input_list</span>,
+        <span class="summary-sig-arg">window_size</span>=<span class="summary-sig-default">10</span>)</span><br />
+      Computes the rolling averages of the input list over the 
+      window_size...essential the average of the list elements surrounding 
+      the current element</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#rolling_average">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.utilities-module.html#print_progress" class="summary-sig-name">print_progress</a>(<span class="summary-sig-arg">cur</span>,
+        <span class="summary-sig-arg">total</span>)</span><br />
+      This function can be called in a processing loop to print out a 
+      progress indicator represented by up to 10 lines of dots, where each 
+      line represents completion of 10% of the total iterations.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#print_progress">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.utilities-module.html#parse_number" class="summary-sig-name">parse_number</a>(<span class="summary-sig-arg">s</span>,
+        <span class="summary-sig-arg">fail</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Tries to convert input object s into a float.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#parse_number">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.utilities-module.html#smart_split" class="summary-sig-name">smart_split</a>(<span class="summary-sig-arg">linein</span>,
+        <span class="summary-sig-arg">sep</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">,</code><code class="variable-quote">'</code></span>)</span><br />
+      Works much like built-in split method of strings, but this version 
+      will honor quoted strings.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#smart_split">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.utilities-module.html#constant_cols" class="summary-sig-name">constant_cols</a>(<span class="summary-sig-arg">D</span>)</span><br />
+      Generate an array that lists those columns that have zero standard 
+      deviation in the input matrix.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#constant_cols">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.utilities-module.html#indicator_vars" class="summary-sig-name">indicator_vars</a>(<span class="summary-sig-arg">L</span>)</span><br />
+      Transforms the list of unique class labels, L, into an indicator 
+      matrix.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#indicator_vars">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.utilities-module.html#normalize_data" class="summary-sig-name">normalize_data</a>(<span class="summary-sig-arg">D</span>,
+        <span class="summary-sig-arg">means</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">stdvs</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Transforms data matrix D such that columns (features) are 
+      mean-centered and unit-deviation.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#normalize_data">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.utilities-module.html#replace_missing_values_with_col_means" class="summary-sig-name">replace_missing_values_with_col_means</a>(<span class="summary-sig-arg">D</span>,
+        <span class="summary-sig-arg">sentinel</span>=<span class="summary-sig-default">-100000</span>)</span><br />
+      For a numeric data matrix, D, cells which have missing data will be 
+      replaces with the column average for the cell's column.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#replace_missing_values_with_col_means">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.utilities-module.html#replace_missing_values_with_value" class="summary-sig-name">replace_missing_values_with_value</a>(<span class="summary-sig-arg">D</span>,
+        <span class="summary-sig-arg">sentinel</span>=<span class="summary-sig-default">-100000</span>,
+        <span class="summary-sig-arg">val</span>=<span class="summary-sig-default">0</span>)</span><br />
+      For a numeric data matrix, D, cells which have missing data will be 
+      replaces with the constant value specified in the arguments.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#replace_missing_values_with_value">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.utilities-module.html#gappy_means_and_stdvs" class="summary-sig-name">gappy_means_and_stdvs</a>(<span class="summary-sig-arg">X</span>,
+        <span class="summary-sig-arg">sentinel</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Computes the column means and standard deviations of a data matrix X,
+      where some of the values are missing or unknown.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#gappy_means_and_stdvs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.common.utilities-module.html#ttest_features" class="summary-sig-name">ttest_features</a>(<span class="summary-sig-arg">D</span>,
+        <span class="summary-sig-arg">L</span>,
+        <span class="summary-sig-arg">return_mat</span>=<span class="summary-sig-default">False</span>)</span><br />
+      Performs univariate t-test on each feature (column) in D, to 
+      determine the significance in the difference between the values for 
+      two classes.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.common.utilities-pysrc.html#ttest_features">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Variables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="'ifr.common'"><code class="variable-quote">'</code><code class="variable-string">ifr.common</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Function Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-FunctionDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="download_file"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">download_file</span>(<span class="sig-arg">url</span>,
+        <span class="sig-arg">dest_file</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.utilities-pysrc.html#download_file">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Downloads a file given by a url (such as one of the zipfiles for the 
+  kent ridge biomedical repository), and stores the file to the destination
+  directory.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>url</code></strong> - The full url to the file to be downloaded. ifr.LUNG_CANCER_URL, 
+          ifr.PROSTATE_URL, and ifr.BCELL_LYMPHOMA_URL, are constants that 
+          point to the appropriate file.</li>
+        <li><strong class="pname"><code>dest_file</code></strong> - The destination filename, including full path.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>(filename, headers)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_official_name"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_official_name</span>(<span class="sig-arg">gene</span>,
+        <span class="sig-arg">entrezgene</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.utilities-pysrc.html#get_official_name">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>For a given gene symbol, like ARTS-1, return the official gene name, 
+  such as ERAP1. This is done by a web-query to ncbi, and parsing the 
+  output. Thus, it is relatively slow and should only be used when 
+  necessary.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>gene</code></strong> - A string like 'OAS1', or entrez-gene id like '4010' if 
+          entrezgene=True</li>
+        <li><strong class="pname"><code>entrezgene</code></strong> - If True, then a different query format is used to resolve the 
+          gene symbol. If the input is an entrezgene id, then this flag 
+          should be True, else False.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>A string, representing the official name of the gene.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="print_progress"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">print_progress</span>(<span class="sig-arg">cur</span>,
+        <span class="sig-arg">total</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.utilities-pysrc.html#print_progress">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This function can be called in a processing loop to print out a 
+  progress indicator represented by up to 10 lines of dots, where each line
+  represents completion of 10% of the total iterations.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>cur</code></strong> - The current value (integer) of the iteration/count.</li>
+        <li><strong class="pname"><code>total</code></strong> - The total number of iterations that must occur.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="parse_number"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">parse_number</span>(<span class="sig-arg">s</span>,
+        <span class="sig-arg">fail</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.utilities-pysrc.html#parse_number">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Tries to convert input object s into a float. If it can, the float 
+  representation is returned. If not, then either it returns None, or 
+  returns a user-specified value.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>s</code></strong> - Input object to be converted to float()</li>
+        <li><strong class="pname"><code>fail</code></strong> - Returned when s can't be converted to float.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>Either float(s) or the value specified by fail, default None.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="smart_split"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">smart_split</span>(<span class="sig-arg">linein</span>,
+        <span class="sig-arg">sep</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">,</code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.utilities-pysrc.html#smart_split">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Works much like built-in split method of strings, but this version 
+  will honor quoted strings. Meaning that if the separator is inside a 
+  quoted string, then the separator is ignored in favor of keeping quoted 
+  strings as a single token.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="constant_cols"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">constant_cols</span>(<span class="sig-arg">D</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.utilities-pysrc.html#constant_cols">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Generate an array that lists those columns that have zero standard 
+  deviation in the input matrix.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>D</code></strong> - The input data matrix, features in columns</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>A list of those columns which have zero std dev</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="indicator_vars"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">indicator_vars</span>(<span class="sig-arg">L</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.utilities-pysrc.html#indicator_vars">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Transforms the list of unique class labels, L, into an indicator 
+  matrix. One row in the matrix for each label. One column for each unique 
+  class (alphabetically sorted), such that a 1 in the column indicates the 
+  class</p>
+  <dl class="fields">
+    <dt>Returns:</dt>
+        <dd>tuple (IV, unique_labels) where IV is the indicator variable 
+          matrix and unique_labels is the ordered set of labels that 
+          correspond with the indicator columns.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="normalize_data"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">normalize_data</span>(<span class="sig-arg">D</span>,
+        <span class="sig-arg">means</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">stdvs</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.utilities-pysrc.html#normalize_data">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Transforms data matrix D such that columns (features) are 
+  mean-centered and unit-deviation. Remember to transform your testing data
+  using the means and stdvs computed from your training data!!!</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>D</code></strong> - NxP data matrix, rows are samples, features are columns</li>
+        <li><strong class="pname"><code>means</code></strong> - An array of P values, representing the mean value that should be 
+          subtracted from each feature. Default is None, indicating the 
+          means should be computed from the samples in D.</li>
+        <li><strong class="pname"><code>stdvs</code></strong> - An array of P values, representing the std deviations of the P 
+          columns to be used to normalize the columns. Default is None, 
+          indicating the stdevs will be computed from the samples in D. 
+          @return (Dn, means, stdvs) where Dn is NxP, such that columns are
+          mean-centered and have unit deviation. means is the list of P 
+          mean values, and stdvs is the list of standard deviations for 
+          each column</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="replace_missing_values_with_col_means"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">replace_missing_values_with_col_means</span>(<span class="sig-arg">D</span>,
+        <span class="sig-arg">sentinel</span>=<span class="sig-default">-100000</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.utilities-pysrc.html#replace_missing_values_with_col_means">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>For a numeric data matrix, D, cells which have missing data will be 
+  replaces with the column average for the cell's column.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>D</code></strong> - A numpy/scipy array. Assumes rows are samples and columns are 
+          field values</li>
+        <li><strong class="pname"><code>sentinel</code></strong> - This is the special number that denotes a missing value. This 
+          must have been added to the data matrix by another function.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>Dhat, where missing values are now mean values for the column.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="replace_missing_values_with_value"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">replace_missing_values_with_value</span>(<span class="sig-arg">D</span>,
+        <span class="sig-arg">sentinel</span>=<span class="sig-default">-100000</span>,
+        <span class="sig-arg">val</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.utilities-pysrc.html#replace_missing_values_with_value">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>For a numeric data matrix, D, cells which have missing data will be 
+  replaces with the constant value specified in the arguments.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>D</code></strong> - A numpy/scipy array. Assumes rows are samples and columns are 
+          field values</li>
+        <li><strong class="pname"><code>sentinel</code></strong> - This is the special number that denotes a missing value. This 
+          must have been added to the data matrix by another function.</li>
+        <li><strong class="pname"><code>val</code></strong> - This is the number to use in place of missing entries</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>Dhat, where missing values are now mean values for the column.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="gappy_means_and_stdvs"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">gappy_means_and_stdvs</span>(<span class="sig-arg">X</span>,
+        <span class="sig-arg">sentinel</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.utilities-pysrc.html#gappy_means_and_stdvs">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Computes the column means and standard deviations of a data matrix X, 
+  where some of the values are missing or unknown. This function simply 
+  ignores those entries marked with the sentinel value in the 
+  computation.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>X</code></strong> - Data matrix, the columns of which will be processed, rows are 
+          assumed to be multiple observations.</li>
+        <li><strong class="pname"><code>sentinel</code></strong> - The numeric value that represents a missing entry in X.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>(M, S, N), where the mean and standard deviation of a column are 
+          computed using only the non-missing entries. I.e., mean(Y) = (sum
+          Yi)/Nhat where i are the non-missing indexes, and Nhat is the 
+          number of non-missing entries. M is the vector of means, S is the
+          vector of std devs, and N has the number of non-missing values 
+          per column</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="ttest_features"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ttest_features</span>(<span class="sig-arg">D</span>,
+        <span class="sig-arg">L</span>,
+        <span class="sig-arg">return_mat</span>=<span class="sig-default">False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.common.utilities-pysrc.html#ttest_features">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Performs univariate t-test on each feature (column) in D, to determine
+  the significance in the difference between the values for two 
+  classes.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>D</code></strong> - The data. Rows are samples, Columns are features</li>
+        <li><strong class="pname"><code>L</code></strong> - The label vector of integers. There should be only two unique 
+          values (two classes) in L.</li>
+        <li><strong class="pname"><code>return_mat</code></strong> - If true, then there are two return values, one is the sorted list
+          of features based on t-measure, the second is a matrix in the 
+          same index order as D, with the T-measure and p-value for each 
+          feature. If false (default), only the sorted list is returned.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>(y,TT), where y is a rank-ordered list of tuples, with the first 
+          in the list being the feature with highest ttest score. [ 
+          (score,pval,feature_idx), (score2, pval2, feature_idx2), .... 
+          (scoreN, pvalN, feature_idxN)]; TT is the matrix, in the same 
+          index order as the samples in D and L, which has in the first 
+          column, the t-measure, and the p-value in the second.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Sep 17 11:02:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

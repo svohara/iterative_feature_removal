@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ifr.feature_selection.iterative_feature_removal.IFR</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="ifr-module.html">Package&nbsp;ifr</a> ::
+        <a href="ifr.feature_selection-module.html">Package&nbsp;feature_selection</a> ::
+        <a href="ifr.feature_selection.iterative_feature_removal-module.html">Module&nbsp;iterative_feature_removal</a> ::
+        Class&nbsp;IFR
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="ifr.feature_selection.iterative_feature_removal.IFR-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class IFR</h1><p class="nomargin-top"><span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR">source&nbsp;code</a></span></p>
+<p>IFR stands for Iterative Feature Removal, and is a mechanism for 
+  selecting the maximum-sized relevant subset of features in a data set 
+  using successive iterations of removing the best K features as selected 
+  by a sparse machine learning method.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.feature_selection.iterative_feature_removal.IFR-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">traindat</span>,
+        <span class="summary-sig-arg">testdat</span>,
+        <span class="summary-sig-arg">feature_names</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">engine</span>=<span class="summary-sig-default">&lt;function svm_engine at 0x1124ca050&gt;</span>,
+        <span class="summary-sig-arg">verbose</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">**ml_kwargs</span>)</span><br />
+      constructor</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__getitem__"></a><span class="summary-sig-name">__getitem__</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">n</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.__getitem__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__iter__"></a><span class="summary-sig-name">__iter__</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.__iter__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="next"></a><span class="summary-sig-name">next</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.next">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="computeAllIterations"></a><span class="summary-sig-name">computeAllIterations</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Will perform iterative removals until there are no more features to 
+      be removed.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.computeAllIterations">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getRollingAvgTestAcc"></a><span class="summary-sig-name">getRollingAvgTestAcc</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">window_size</span>=<span class="summary-sig-default">10</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.getRollingAvgTestAcc">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getRollingAvgTrainAcc"></a><span class="summary-sig-name">getRollingAvgTrainAcc</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">window_size</span>=<span class="summary-sig-default">10</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.getRollingAvgTrainAcc">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getNumIterations"></a><span class="summary-sig-name">getNumIterations</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.getNumIterations">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.feature_selection.iterative_feature_removal.IFR-class.html#getRemovedCount" class="summary-sig-name">getRemovedCount</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">numIter</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Returns the total number of genes removed over the iterations which 
+      have currently been processed.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.getRemovedCount">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="getRemainingCount"></a><span class="summary-sig-name">getRemainingCount</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.getRemainingCount">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.feature_selection.iterative_feature_removal.IFR-class.html#getAllRemovedFeatures" class="summary-sig-name">getAllRemovedFeatures</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns:
+      A flattened list of all col indxs in self.removed</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.getAllRemovedFeatures">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.feature_selection.iterative_feature_removal.IFR-class.html#getAllRemainingFeatures" class="summary-sig-name">getAllRemainingFeatures</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns:
+      a list of all col idxs that have NOT been removed yet</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.getAllRemainingFeatures">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="save"></a><span class="summary-sig-name">save</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">fn</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">IFR_results.p</code><code class="variable-quote">'</code></span>)</span><br />
+      Saves the entire ifr data object to a pickle file</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.save">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_removed_features"></a><span class="summary-sig-name">get_removed_features</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the iterative removals using the feature names instead of the
+      indexes, as is stored in self.removed</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.get_removed_features">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="export_iterations"></a><span class="summary-sig-name">export_iterations</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">fn</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">iterations.txt</code><code class="variable-quote">'</code></span>)</span><br />
+      Saves a text file which has the contents of self.removed, where each 
+      row is an iteration, and has the common names of the features 
+      separated by commas in each row.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.export_iterations">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="plotResults"></a><span class="summary-sig-name">plotResults</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">titlestr</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">ylimits</span>=<span class="summary-sig-default"><code class="variable-group">[</code>0.5<code class="variable-op">, </code>1.05<code class="variable-group">]</code></span>,
+        <span class="summary-sig-arg">plotfunc</span>=<span class="summary-sig-default">&lt;function semilogx at 0x107b050c8&gt;</span>,
+        <span class="summary-sig-arg">ylimitsB</span>=<span class="summary-sig-default"><code class="variable-group">[</code>0<code class="variable-op">, </code>101<code class="variable-group">]</code></span>,
+        <span class="summary-sig-arg">legend_loc</span>=<span class="summary-sig-default">3</span>,
+        <span class="summary-sig-arg">show</span>=<span class="summary-sig-default">True</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.plotResults">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.feature_selection.iterative_feature_removal.IFR-class.html#plotSolo" class="summary-sig-name">plotSolo</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">titlestr</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">ylimits</span>=<span class="summary-sig-default"><code class="variable-group">[</code>0.25<code class="variable-op">, </code>1.05<code class="variable-group">]</code></span>,
+        <span class="summary-sig-arg">plotfunc</span>=<span class="summary-sig-default">&lt;function semilogx at 0x107b050c8&gt;</span>,
+        <span class="summary-sig-arg">legend_loc</span>=<span class="summary-sig-default">3</span>,
+        <span class="summary-sig-arg">show</span>=<span class="summary-sig-default">True</span>)</span><br />
+      Much the same as plotResults() method, but only has the 'main' IFR 
+      accuracy curve.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.plotSolo">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.feature_selection.iterative_feature_removal.IFR-class.html#_iterate" class="summary-sig-name" onclick="show_private();">_iterate</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Perform one iterative removal.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR._iterate">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ifr.feature_selection.iterative_feature_removal.IFR-class.html#_getFeatureIdxs" class="summary-sig-name" onclick="show_private();">_getFeatureIdxs</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">features_set</span>,
+        <span class="summary-sig-arg">model_idxs</span>)</span><br />
+      The model returns a list of columns with non-zero coefficients.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR._getFeatureIdxs">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">traindat</span>,
+        <span class="sig-arg">testdat</span>,
+        <span class="sig-arg">feature_names</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">engine</span>=<span class="sig-default">&lt;function svm_engine at 0x1124ca050&gt;</span>,
+        <span class="sig-arg">verbose</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">**ml_kwargs</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.__init__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>constructor</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>traindat</code></strong> - The training data over which feature selection is performed. 
+          Specify as a tuple (D,T) where D is the data matrix, samples are 
+          in rows, and T is a vector of integer labels. This current 
+          version only supports binary classification, so there should be 
+          only two unique label values in T.</li>
+        <li><strong class="pname"><code>testdat</code></strong> - The testing (or validation) data, which is not used in feature 
+          selection, but is used to measure the accuracy of the selected 
+          features on the withheld data. Same format as traindat, a tuple 
+          (D,T)</li>
+        <li><strong class="pname"><code>feature_names</code></strong> - Optional. If provided, this is a list of strings where each 
+          element of the list is the name for the feature of the 
+          corresponding column</li>
+        <li><strong class="pname"><code>engine</code></strong> - The sparse machine learning engine used to train models and 
+          select non-zero coefficients. See the ml_engines.py module in the
+          &quot;common&quot; package for the interface.</li>
+        <li><strong class="pname"><code>ml_kwargs</code></strong> - Keyword arguments to be passed to machine learning engine, such 
+          as parameter settings, stopping criteria, etc.</li>
+    </ul></dd>
+  </dl>
+<div class="fields">      <p><strong>Note:</strong>
+        partition type and test frac parameters are only used if no fixed 
+        testing data set was provided (testdat is None). If during object 
+        construction, a fixed test set was specified, then these parameters
+        are ignored.
+      </p>
+</div></td></tr></table>
+</div>
+<a name="getRemovedCount"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getRemovedCount</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">numIter</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.getRemovedCount">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Returns the total number of genes removed over the iterations which 
+  have currently been processed.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>numIter</code></strong> - If None, this function simply returns the value of the member 
+          variable self.removed_count. Else, if a number N is provided, 
+          this method returns the count of genes removed for the first N 
+          iterations.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getAllRemovedFeatures"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getAllRemovedFeatures</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.getAllRemovedFeatures">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Returns:</dt>
+        <dd>A flattened list of all col indxs in self.removed</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="getAllRemainingFeatures"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getAllRemainingFeatures</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.getAllRemainingFeatures">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Returns:</dt>
+        <dd>a list of all col idxs that have NOT been removed yet</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="plotSolo"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">plotSolo</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">titlestr</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">ylimits</span>=<span class="sig-default"><code class="variable-group">[</code>0.25<code class="variable-op">, </code>1.05<code class="variable-group">]</code></span>,
+        <span class="sig-arg">plotfunc</span>=<span class="sig-default">&lt;function semilogx at 0x107b050c8&gt;</span>,
+        <span class="sig-arg">legend_loc</span>=<span class="sig-default">3</span>,
+        <span class="sig-arg">show</span>=<span class="sig-default">True</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR.plotSolo">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Much the same as plotResults() method, but only has the 'main' IFR 
+  accuracy curve. This one is better if you want to embed several IFR 
+  curves in a single figure.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="_iterate"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_iterate</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR._iterate">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Perform one iterative removal. Note, the intended way to use this 
+  class after construction is to call the next() method in a loop. This is 
+  an internal method called by next().</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="_getFeatureIdxs"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_getFeatureIdxs</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">features_set</span>,
+        <span class="sig-arg">model_idxs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ifr.feature_selection.iterative_feature_removal-pysrc.html#IFR._getFeatureIdxs">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>The model returns a list of columns with non-zero coefficients. 
+  However, the model was trained on an iteration where some of the columns 
+  from the original data were removed. So feature indexes returned by the 
+  model are not aligned with the columns of self.D, instead we need to 
+  determine the columns by referencing the input feature set used to filter
+  the data.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="ifr-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >Iterative Feature Removal</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Sep 17 11:02:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
